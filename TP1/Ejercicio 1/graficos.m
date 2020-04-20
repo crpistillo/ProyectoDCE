@@ -1,7 +1,7 @@
 close all;
 clear all;
 
-SIM1=dlmread('EJERCICO1_10a-10.txt','\t',1,0);
+SIM1=dlmread('EJERCICO1.txt','\t',1,0);
 %SIM2=dlmread('R2.txt','\t',1,0);
 %SIM3=dlmread('R3.txt','\t',1,0);
 
