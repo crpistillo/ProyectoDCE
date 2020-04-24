@@ -1,0 +1,33 @@
+* /Users/Caro/Documents/FIUBA/MATERIAS/DCE/ProyectoDCE/TP1/Ejercicio 3/EJERCICIOunidos.asc
+R1 N002 Vo 100k
+R2 N004 0 100k
+RF1 N003 N004 100k
+XU1 NC_01 NC_02 NC_03 NC_04 NC_05 LT1017
+V1 P001 0 SINE(0 10 4k)
+V2 +V 0 15
+V3 -V 0 -15
+R3 Vc N005 100k
+V5 Vcc+ 0 5
+V6 Vcc- 0 -5
+R4 N001 0 100k
+R5 Vo Vc 100k
+C1 Vc 0 0.2n
+R6 Vo N001 100k
+R7 N005 N003 6k
+R8 0 P001 1000
+R9 NC_06 N003 0.5k
+D2 N005 N006 D
+D1 0 N006 D
+XU3 N004 N002 +V -V N003 TL081
+XU2 Vc N001 +V -V Vo TL081
+.model D D
+.lib /Users/Caro/Library/Application Support/LTspice/lib/cmp/standard.dio
+;.dc V1 10 -10
+;.dc V1 -10 10
+.tran 0 1m 0 0.1u
+;tran 300u uic
+.ic V(vc)=10
+.lib /Users/Caro/Documents/FIUBA/MATERIAS/DCE/ProyectoDCE/TP1/Ejercicio 3/TL081.301
+.lib LTC1.lib
+.backanno
+.end

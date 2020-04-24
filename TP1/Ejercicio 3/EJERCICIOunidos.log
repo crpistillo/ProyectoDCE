@@ -1,0 +1,87 @@
+Circuit: * /Users/Caro/Documents/FIUBA/MATERIAS/DCE/ProyectoDCE/TP1/Ejercicio 3/EJERCICIOunidos.asc
+
+WARNING: Node NC_01 is floating.
+WARNING: Node U3:2 is floating.
+WARNING: Node U3:1 is floating.
+WARNING: Node U2:2 is floating.
+WARNING: Node U2:1 is floating.
+
+WARNING: Less than two connections to node N002.  This node is used by R1.
+WARNING: Less than two connections to node +V.  This node is used by V2.
+WARNING: Less than two connections to node -V.  This node is used by V3.
+WARNING: Less than two connections to node VCC+.  This node is used by V5.
+WARNING: Less than two connections to node VCC-.  This node is used by V6.
+WARNING: Less than two connections to node NC_06.  This node is used by R9.
+WARNING: Less than two connections to node U3:2.  This node is used by J:U3:1.
+WARNING: Less than two connections to node U3:1.  This node is used by J:U3:2.
+WARNING: Less than two connections to node U2:2.  This node is used by J:U2:1.
+WARNING: Less than two connections to node U2:1.  This node is used by J:U2:2.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+Gmin = 107.374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+Gmin = 132.153
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+Gmin = 131.831
+vernier = 0.000976562
+vernier = 0.000488281
+Singular matrix:  Check node u2:2
+   Iteration No. 34
+Gmin = 0
+Singular matrix:  Check node u2:2
+   Iteration No. 1
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Singular matrix:  Check node u3:2
+   Iteration No. 4
+Source Step = 100%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source stepping failed
+
+Pseudo Transient failed in finding the operating point.
+Trouble finding operating point....skipping operating point for Transient analysis.
+Ignoring empty pin current: Ix(u3:in+)
+Ignoring empty pin current: Ix(u3:in-)
+Ignoring empty pin current: Ix(u3:v+)
+Ignoring empty pin current: Ix(u3:v-)
+Ignoring empty pin current: Ix(u3:o)
+Ignoring empty pin current: Ix(u2:in+)
+Ignoring empty pin current: Ix(u2:in-)
+Ignoring empty pin current: Ix(u2:v+)
+Ignoring empty pin current: Ix(u2:v-)
+Ignoring empty pin current: Ix(u2:o)
+
+Date: Thu Apr 23 23:15:12 2020
+Total elapsed time: 7.279 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 270826
+traniter = 0
+tranpoints = 1
+accept = 1
+rejected = 5618
+matrix size = 83
+fillins = 341
+solver = Normal
+Thread vector: 25.9/14.1[2] 9.2/6.3[2] 3.8/15.4[1] 0.7/6.8[1]  2592/500
+Matrix Compiler1: 35462 object code size  7.3/4.8/[2.0]
+Matrix Compiler2: off
+
