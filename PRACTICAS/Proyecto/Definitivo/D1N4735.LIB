@@ -1,0 +1,3 @@
+.model D1N4735  D(Is=1.168f Rs=.9756 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=140p M=.3196
++               Vj=.75 Fc=.5 Isr=2.613n Nr=2 Bv=6.2 Ibv=4.9984 Nbv=.32088
++               Ibvl=184.78u Nbvl=.19558 Tbv1=443.55u)

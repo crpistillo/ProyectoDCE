@@ -9,7 +9,7 @@
 *    Modeling services provided by   *
 * Interface Technologies www.i-t.com *
 **************************************
-.SUBCKT bd681 1 2 3
+.SUBCKT BD681 1 2 3
 * Model generated on Feb 28, 2004
 * Model format: PSpice
 * Darlington macro model
