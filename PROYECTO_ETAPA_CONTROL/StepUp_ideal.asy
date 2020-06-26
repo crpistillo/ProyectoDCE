@@ -1,0 +1,12 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 33 65 -32 -32
+TEXT -56 -6 Left 2 IN
+TEXT 36 -9 Left 2 OUT
+TEXT -68 -52 Left 2 Step Up 35V
+PIN -32 16 NONE 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 32 16 NONE 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 2
