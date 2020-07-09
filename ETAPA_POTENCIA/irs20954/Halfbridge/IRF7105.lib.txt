@@ -1,0 +1,87 @@
+*** SPICE deck for cell bmon_schematic{sch} from library bmon_sim
+*** Created on Tue Jan 01, 2008 16:40:08
+*** Last revised on Thu Jan 03, 2008 14:52:58
+*** Written on Thu Jan 03, 2008 14:53:13 by Electric VLSI Design System, 
+*version 8.06
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+.OPTIONS NOMOD NOPAGE
+*CMOS/BULK-NWELL (PRELIMINARY PARAMETERS)
+.OPTIONS NOMOD DEFL=3UM DEFW=3UM DEFAD=70P DEFAS=70P LIMPTS=1000
++ITL5=0 RELTOL=0.01 ABSTOL=500PA VNTOL=500UV LVLTIM=2
++LVLCOD=1
+.MODEL N NMOS LEVEL=1
++KP=60E-6 VTO=0.7 GAMMA=0.3 LAMBDA=0.05 PHI=0.6
++LD=0.4E-6 TOX=40E-9 CGSO=2.0E-10 CGDO=2.0E-10 CJ=.2MF/M^2
+.MODEL P PMOS LEVEL=1
++KP=20E-6 VTO=0.7 GAMMA=0.4 LAMBDA=0.05 PHI=0.6
++LD=0.6E-6 TOX=40E-9 CGSO=3.0E-10 CGDO=3.0E-10 CJ=.2MF/M^2
+.MODEL DIFFCAP D CJO=.2MF/M^2
+
+*** CELL: DS2450_OW_ADC{sch}
+.SUBCKT DS2450_OW_ADC AIN-A AIN-B AIN-C AIN-D DATA Vcc gnd
+.ENDS DS2450_OW_ADC
+
+*** CELL: HMC2003{sch}
+.SUBCKT HMC2003 SR+ SR- V+ Vbias Vbridge Vrefout Vsense Xoff+ Xoff- Xout 
++Xtrim Yoff+ Yoff- Yout Ytrim Zoff+ Zoff- Zout Ztrim gnd
+Rres@0 SR+ SR- 6
+VDCVoltag@0 Vrefout gnd DC 2.5V
+.ENDS HMC2003
+*** WARNING: no power connection for P-transistor wells in cell 
+*'IRF7105{sch}'
+*** WARNING: no ground connection for N-transistor wells in cell 
+*'IRF7105{sch}'
+
+*** CELL: IRF7105{sch}
+.SUBCKT IRF7105 D1_pin7_ D2_pin5_ G1_pin2_ G2_pin4_ S1_pin1_ S2_pin3_
+Mnmos4p@0 D1_pin7_ G1_pin2_ S1_pin1_ S1_pin1_ N L=0.4U W=0.4U
+Mpmos4p@0 D2_pin5_ G2_pin4_ S2_pin3_ S2_pin3_ P L=0.4U W=0.4U
+Dzdiode@0 S1_pin1_ D1_pin7_ 25
+Dzdiode@1 D2_pin5_ S2_pin3_ 25
+.ENDS IRF7105
+
+*** CELL: OWthermo_DS18B20{sch}
+.SUBCKT OWthermo_DS18B20 DQ_pin2_ GND_pin1_ VDD_pin3_
+.ENDS OWthermo_DS18B20
+
+*** CELL: protection_diode{sch}
+.SUBCKT protection_diode Vdev+ Vdev- Vnet+ Vnet-
+Rres@0 Vnet+ Vdev+ 5
+Rres@1 Vnet- Vdev- 5
+Dzdiode@0 Vnet- Vnet+ 7
+.ENDS protection_diode
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: bmon_schematic{sch}
+Ccap@0 net@68 net@115 0.3u
+Cecap@0 vdd gnd 10u
+Cecap@1 net@49 gnd 10u
+Cecap@3 net@226 net@223 10u
+Cecap@4 net@128 gnd 10u
+Mnmos4p@0 net@188 net@253 gnd gnd N L=0.4U W=0.4U
+Qnpn@0 net@142 net@244 net@188 NBJT AREA=2P
+Rres@0 vdd net@33 100
+Rres@1 vdd net@49 100
+Rres@2 net@128 net@33 100
+Rres@7 net@142 vdd 10k
+Rres@9 net@226 net@6 100
+Rres@10 net@229 net@228 100
+Rres@11 net@244 net@247 10k
+Rres@12 net@188 net@247 2.2k
+.TRAN 10NS 10MS
+VDCVoltag@0 net@33 gnd DC 12V
+VDCVoltag@1 net@6 gnd DC 5V
+XDS2450_O@1 net@188 net@101 net@102 net@107 net@155 net@89 gnd DS2450_OW_ADC
+XHMC2003@0 net@115 net@60 net@128 HMC2003@0_Vbias HMC2003@0_Vbridge net@247 
++HMC2003@0_Vsense HMC2003@0_Xoff+ HMC2003@0_Xoff- net@101 HMC2003@0_Xtrim 
++HMC2003@0_Yoff+ HMC2003@0_Yoff- net@102 HMC2003@0_Ytrim HMC2003@0_Zoff+ 
++HMC2003@0_Zoff- net@107 HMC2003@0_Ztrim gnd HMC2003
+XIRF7105@0 net@68 net@68 net@16 net@16 gnd net@49 IRF7105
+XIRF7105@1 net@60 net@60 net@15 net@15 gnd net@49 IRF7105
+XOWthermo@1 net@155 gnd net@89 OWthermo_DS18B20
+VPulse@0 net@253 gnd pulse 0 10V 1ms 200ps 200ps 2ms 6ms
+Xprotecti@0 net@89 gnd net@226 net@223 protection_diode
+Xprotecti@1 net@155 gnd net@229 net@220 protection_diode
+.END
