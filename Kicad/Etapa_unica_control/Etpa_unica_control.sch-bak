@@ -1271,20 +1271,31 @@ Wire Wire Line
 	5600 2550 6650 2550
 Wire Wire Line
 	2250 1700 2250 2350
+$Comp
+L Connector:Conn_01x04_Male J0
+U 1 1 5F0026E4
+P 2100 6900
+F 0 "J0" H 2208 7181 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2208 7090 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical" H 2100 6900 50  0001 C CNN
+F 3 "~" H 2100 6900 50  0001 C CNN
+	1    2100 6900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2450 7200 2450 5600
+	2300 6800 2300 5600
 Wire Wire Line
-	2450 5600 2700 5600
+	2300 5600 2700 5600
 Connection ~ 2700 5600
 Wire Wire Line
-	2200 6900 3200 6900
+	2300 6900 3200 6900
 Wire Wire Line
 	3200 6900 3200 5200
 Connection ~ 3200 5200
 Wire Wire Line
-	2250 7650 2250 7300
+	2300 7650 2300 7100
 Wire Wire Line
-	2250 7650 4950 7650
+	2300 7650 4950 7650
 Connection ~ 4950 7650
 Wire Wire Line
 	4950 7650 5050 7650
@@ -1368,11 +1379,11 @@ F 3 "" H 7200 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 6800 1700 4050
+	1700 7000 1700 4050
 Wire Wire Line
 	1700 4050 1850 4050
 Wire Wire Line
-	1700 6800 2200 6800
+	1700 7000 2300 7000
 Connection ~ 1850 4050
 $Comp
 L Amplifier_Operational:TL082 U2
@@ -1457,6 +1468,50 @@ F 3 "" H 2100 8600 50  0001 C CNN
 $EndComp
 $Comp
 L Amplifier_Operational:TL084 U1
+U 1 1 5F56B00B
+P 5500 6800
+F 0 "U1" H 5500 7167 50  0000 C CNN
+F 1 "TL084" H 5500 7076 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 5450 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5550 7000 50  0001 C CNN
+	1    5500 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 2 1 5F56C16C
+P 7500 6800
+F 0 "U1" H 7500 6433 50  0000 C CNN
+F 1 "TL084" H 7500 6524 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 7450 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7550 7000 50  0001 C CNN
+	2    7500 6800
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 3 1 5F56CC34
+P 5350 7750
+F 0 "U1" H 5350 7383 50  0000 C CNN
+F 1 "TL084" H 5350 7474 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 5300 7850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5400 7950 50  0001 C CNN
+	3    5350 7750
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 4 1 5F56DBA8
+P 11050 6900
+F 0 "U1" H 11050 6533 50  0000 C CNN
+F 1 "TL084" H 11050 6624 50  0000 C CNN
+F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 11000 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 11100 7100 50  0001 C CNN
+	4    11050 6900
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
 U 5 1 5F56E698
 P 2200 8900
 F 0 "U1" H 2158 8946 50  0000 L CNN
@@ -1464,74 +1519,6 @@ F 1 "TL084" H 2158 8855 50  0000 L CNN
 F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 2150 9000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 2250 9100 50  0001 C CNN
 	5    2200 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J11
-U 1 1 5F1E0532
-P 2050 7200
-F 0 "J11" H 2158 7381 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 2158 7290 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 2050 7200 50  0001 C CNN
-F 3 "~" H 2050 7200 50  0001 C CNN
-	1    2050 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J10
-U 1 1 5F1E14F5
-P 2000 6800
-F 0 "J10" H 2108 6981 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 2108 6890 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 2000 6800 50  0001 C CNN
-F 3 "~" H 2000 6800 50  0001 C CNN
-	1    2000 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 7200 2250 7200
-$Comp
-L Amplifier_Operational:TL084 U1
-U 3 1 5F25DF73
-P 11050 6900
-F 0 "U1" H 11050 6533 50  0000 C CNN
-F 1 "TL084" H 11050 6624 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 11000 7000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 11100 7100 50  0001 C CNN
-	3    11050 6900
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL084 U1
-U 4 1 5F25F035
-P 7500 6800
-F 0 "U1" H 7500 6433 50  0000 C CNN
-F 1 "TL084" H 7500 6524 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 7450 6900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7550 7000 50  0001 C CNN
-	4    7500 6800
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL084 U1
-U 1 1 5F263735
-P 5350 7750
-F 0 "U1" H 5350 8117 50  0000 C CNN
-F 1 "TL084" H 5350 8026 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 5300 7850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5400 7950 50  0001 C CNN
-	1    5350 7750
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL084 U1
-U 2 1 5F264933
-P 5500 6800
-F 0 "U1" H 5500 6433 50  0000 C CNN
-F 1 "TL084" H 5500 6524 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" H 5450 6900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5550 7000 50  0001 C CNN
-	2    5500 6800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
