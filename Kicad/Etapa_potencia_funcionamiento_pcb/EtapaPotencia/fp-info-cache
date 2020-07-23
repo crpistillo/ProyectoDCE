@@ -1,4 +1,4 @@
-16949063194654761
+16939492006144309
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75260,48 +75260,6 @@ Varistor
 RV_Disc_D21.5mm_W11.4mm_P10mm
 Varistor, diameter 21.5mm, width 11.4mm, pitch 10mm
 varistor SIOV
-0
-2
-2
-eec
-On_Semiconductor-MUR460-Manufacturer_Recommended
-
-
-0
-2
-2
-kicad2
-DIOAD1256W56L444D203
-1N750
-Zener Diode
-0
-2
-2
-kicad2
-DIOAD2860W130L840D505
-AXIAL-LEAD-CASE 267-05
-Diode
-0
-2
-2
-kicad2
-NSPW500BS
-NSPW500BS-3
-LED
-0
-2
-2
-kicad2
-TO255P460X1020X2008-3P
-TO-220-
-Integrated Circuit
-0
-3
-3
-modelos
-DIOAD1950W125L950D560
-
-
 0
 2
 2

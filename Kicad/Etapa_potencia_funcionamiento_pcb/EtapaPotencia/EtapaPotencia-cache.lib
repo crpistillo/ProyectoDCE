@@ -67,6 +67,43 @@ X V+ 8 -100 300 150 D 50 50 3 1 W
 ENDDRAW
 ENDDEF
 #
+# Amplifier_Operational_TL084
+#
+DEF Amplifier_Operational_TL084 U 0 5 Y Y 5 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "Amplifier_Operational_TL084" 0 -200 50 H V L CNN
+F2 "" -50 100 50 H I C CNN
+F3 "" 50 200 50 H I C CNN
+ALIAS LM324 TLC274 TLC279 TL074 LM324A MCP6004 TL084 TL064 LMV324 LMC6484 MCP604 MC33079 MC33174 MC33179 OPA1604 OPA1679 OPA4134 OPA4340UA OPA4376 MCP6L94 TSV914 ADA4807-4 TSV994
+$FPLIST
+ SOIC*3.9x8.7mm*P1.27mm*
+ DIP*W7.62mm*
+ TSSOP*4.4x5mm*P0.65mm*
+ SSOP*5.3x6.2mm*P0.65mm*
+ MSOP*3x3mm*P0.5mm*
+$ENDFPLIST
+DRAW
+P 4 1 1 10 -200 200 200 0 -200 -200 -200 200 f
+P 4 2 1 10 -200 200 200 0 -200 -200 -200 200 f
+P 4 3 1 10 -200 200 200 0 -200 -200 -200 200 f
+P 4 4 1 10 -200 200 200 0 -200 -200 -200 200 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X - 2 -300 -100 100 R 50 50 1 1 I
+X + 3 -300 100 100 R 50 50 1 1 I
+X + 5 -300 100 100 R 50 50 2 1 I
+X - 6 -300 -100 100 R 50 50 2 1 I
+X ~ 7 300 0 100 L 50 50 2 1 O
+X + 10 -300 100 100 R 50 50 3 1 I
+X ~ 8 300 0 100 L 50 50 3 1 O
+X - 9 -300 -100 100 R 50 50 3 1 I
+X + 12 -300 100 100 R 50 50 4 1 I
+X - 13 -300 -100 100 R 50 50 4 1 I
+X ~ 14 300 0 100 L 50 50 4 1 O
+X V- 11 -100 -300 150 U 50 50 5 1 W
+X V+ 4 -100 300 150 D 50 50 5 1 W
+ENDDRAW
+ENDDEF
+#
 # Comparator_LM393
 #
 DEF Comparator_LM393 U 0 5 Y Y 3 L N
@@ -239,6 +276,42 @@ X S 3 0 -200 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
+# EtapaPotencia-rescue_MUR460-eec
+#
+DEF EtapaPotencia-rescue_MUR460-eec D 0 40 Y Y 1 L N
+F0 "D" 0 200 50 H V L CNN
+F1 "EtapaPotencia-rescue_MUR460-eec" 0 300 50 H V L CNN
+F2 "On_Semiconductor-MUR460-*" 0 400 50 H I L CNN
+F3 "http://www.onsemi.cn/pub_link/Collateral/MUR420-D.PDF" 0 500 50 H I L CNN
+F4 "Manufacturer URL" 0 600 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.onsemi.com/" 0 700 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 800 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.onsemi.com/pub_link/Collateral/267-05.PDF" 0 900 50 H I L CNN "Component Link 3 URL"
+F8 "Rev. 15" 0 1000 50 H I L CNN "Datasheet Version"
+F9 "110" 0 1100 50 H I L CNN "IFSM Max A"
+F10 "Through Hole" 0 1200 50 H I L CNN "Mounting Technology"
+F11 "2-Pin, Axial Lead, Diameter 5.05 mm" 0 1300 50 H I L CNN "Package Description"
+F12 "Rev. G, 06/2000" 0 1400 50 H I L CNN "Package Version"
+F13 "Bulk Bag" 0 1500 50 H I L CNN "Packing"
+F14 "Ultrafast" 0 1600 50 H I L CNN "Type"
+F15 "600" 0 1700 50 H I L CNN "VRRM Max V"
+F16 "Diode" 0 1800 50 H I L CNN "category"
+F17 "825727" 0 1900 50 H I L CNN "ciiva ids"
+F18 "69ab1f1ed0108ab0" 0 2000 50 H I L CNN "library id"
+F19 "On Semiconductor" 0 2100 50 H I L CNN "manufacturer"
+F20 "AXIAL_LEAD-2-267-05" 0 2200 50 H I L CNN "package"
+F21 "1407122607" 0 2300 50 H I L CNN "release date"
+F22 "Yes" 0 2400 50 H I L CNN "rohs"
+F23 "8E7B49A0-6CC1-441A-B5E2-4AAE5A9DFC8B" 0 2500 50 H I L CNN "vault revision"
+F24 "yes" 0 2600 50 H I L CNN "imported"
+DRAW
+P 2 1 1 0 200 100 200 -100 N
+P 4 1 1 0 100 -100 200 0 100 100 100 -100 N
+X K 1 300 0 100 L 40 0 1 1 P
+X A 2 0 0 100 R 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
 # EtapaPotencia-rescue_NSPW500BS-NSPW500BS
 #
 DEF EtapaPotencia-rescue_NSPW500BS-NSPW500BS LED 0 30 Y Y 1 F N
@@ -309,42 +382,6 @@ P 5 0 1 0 90 -70 70 -90 50 -50 90 -70 90 -70 F
 X C 1 100 200 100 D 50 50 1 1 P
 X B 2 -200 0 225 R 50 50 1 1 I
 X E 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# eec_MUR460
-#
-DEF eec_MUR460 D 0 40 Y Y 1 L N
-F0 "D" 0 200 50 H V L CNN
-F1 "eec_MUR460" 0 300 50 H V L CNN
-F2 "On_Semiconductor-MUR460-*" 0 400 50 H I L CNN
-F3 "http://www.onsemi.cn/pub_link/Collateral/MUR420-D.PDF" 0 500 50 H I L CNN
-F4 "Manufacturer URL" 0 600 50 H I L CNN "Component Link 1 Description"
-F5 "http://www.onsemi.com/" 0 700 50 H I L CNN "Component Link 1 URL"
-F6 "Package Specification" 0 800 50 H I L CNN "Component Link 3 Description"
-F7 "http://www.onsemi.com/pub_link/Collateral/267-05.PDF" 0 900 50 H I L CNN "Component Link 3 URL"
-F8 "Rev. 15" 0 1000 50 H I L CNN "Datasheet Version"
-F9 "110" 0 1100 50 H I L CNN "IFSM Max A"
-F10 "Through Hole" 0 1200 50 H I L CNN "Mounting Technology"
-F11 "2-Pin, Axial Lead, Diameter 5.05 mm" 0 1300 50 H I L CNN "Package Description"
-F12 "Rev. G, 06/2000" 0 1400 50 H I L CNN "Package Version"
-F13 "Bulk Bag" 0 1500 50 H I L CNN "Packing"
-F14 "Ultrafast" 0 1600 50 H I L CNN "Type"
-F15 "600" 0 1700 50 H I L CNN "VRRM Max V"
-F16 "Diode" 0 1800 50 H I L CNN "category"
-F17 "825727" 0 1900 50 H I L CNN "ciiva ids"
-F18 "69ab1f1ed0108ab0" 0 2000 50 H I L CNN "library id"
-F19 "On Semiconductor" 0 2100 50 H I L CNN "manufacturer"
-F20 "AXIAL_LEAD-2-267-05" 0 2200 50 H I L CNN "package"
-F21 "1407122607" 0 2300 50 H I L CNN "release date"
-F22 "Yes" 0 2400 50 H I L CNN "rohs"
-F23 "8E7B49A0-6CC1-441A-B5E2-4AAE5A9DFC8B" 0 2500 50 H I L CNN "vault revision"
-F24 "yes" 0 2600 50 H I L CNN "imported"
-DRAW
-P 2 1 1 0 200 100 200 -100 N
-P 4 1 1 0 100 -100 200 0 100 100 100 -100 N
-X K 1 300 0 100 L 40 0 1 1 P
-X A 2 0 0 100 R 40 0 1 1 P
 ENDDRAW
 ENDDEF
 #

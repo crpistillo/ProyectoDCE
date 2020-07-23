@@ -58,39 +58,6 @@ F 3 "~" H 750 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Amplifier_Operational:TL082 U1
-U 1 1 5F18E47D
-P 1800 2400
-F 0 "U1" H 1800 2767 50  0000 C CNN
-F 1 "TL082" H 1800 2676 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 1800 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1800 2400 50  0001 C CNN
-	1    1800 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL082 U1
-U 3 1 5F193261
-P 900 4550
-F 0 "U1" H 858 4596 50  0000 L CNN
-F 1 "TL082" H 858 4505 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 900 4550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 900 4550 50  0001 C CNN
-	3    900  4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL082 U1
-U 2 1 5F1AD760
-P 3100 3600
-F 0 "U1" H 3100 3967 50  0000 C CNN
-F 1 "TL082" H 3100 3876 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 3100 3600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 3100 3600 50  0001 C CNN
-	2    3100 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R11
 U 1 1 5F1AF28E
 P 3150 4150
@@ -760,17 +727,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4400 6150 50  0001 C CNN
 	2    4400 6150
 	1    0    0    1   
 $EndComp
-$Comp
-L Amplifier_Operational:TL082 U2
-U 1 1 5F1CA186
-P 2500 6250
-F 0 "U2" H 2500 5883 50  0000 C CNN
-F 1 "TL082" H 2500 5974 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 2500 6250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 2500 6250 50  0001 C CNN
-	1    2500 6250
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4700 6150 4850 6150
 Wire Wire Line
@@ -818,17 +774,6 @@ F 3 "" H 5150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR01
-U 1 1 5F270AF0
-P 800 4250
-F 0 "#PWR01" H 800 4100 50  0001 C CNN
-F 1 "+12V" H 815 4423 50  0000 C CNN
-F 2 "" H 800 4250 50  0001 C CNN
-F 3 "" H 800 4250 50  0001 C CNN
-	1    800  4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR03
 U 1 1 5F27177E
 P 850 5700
@@ -838,17 +783,6 @@ F 2 "" H 850 5700 50  0001 C CNN
 F 3 "" H 850 5700 50  0001 C CNN
 	1    850  5700
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:-5V #PWR02
-U 1 1 5F2754A6
-P 800 4850
-F 0 "#PWR02" H 800 4950 50  0001 C CNN
-F 1 "-5V" H 815 5023 50  0000 C CNN
-F 2 "" H 800 4850 50  0001 C CNN
-F 3 "" H 800 4850 50  0001 C CNN
-	1    800  4850
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:-5V #PWR04
@@ -1058,47 +992,25 @@ F 3 "~" H 6100 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL082 U3
-U 1 1 5F2BF17B
-P 7200 2400
-F 0 "U3" H 7200 2767 50  0000 C CNN
-F 1 "TL082" H 7200 2676 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 7200 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7200 2400 50  0001 C CNN
-	1    7200 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL082 U3
-U 3 1 5F2C4D52
-P 1650 5000
-F 0 "U3" H 1608 5046 50  0000 L CNN
-F 1 "TL082" H 1608 4955 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 1650 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1650 5000 50  0001 C CNN
-	3    1650 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR06
 U 1 1 5F2C78F5
-P 1550 4700
-F 0 "#PWR06" H 1550 4550 50  0001 C CNN
-F 1 "+12V" H 1565 4873 50  0000 C CNN
-F 2 "" H 1550 4700 50  0001 C CNN
-F 3 "" H 1550 4700 50  0001 C CNN
-	1    1550 4700
+P 900 4600
+F 0 "#PWR06" H 900 4450 50  0001 C CNN
+F 1 "+12V" H 915 4773 50  0000 C CNN
+F 2 "" H 900 4600 50  0001 C CNN
+F 3 "" H 900 4600 50  0001 C CNN
+	1    900  4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-5V #PWR07
 U 1 1 5F2C80C1
-P 1550 5300
-F 0 "#PWR07" H 1550 5400 50  0001 C CNN
-F 1 "-5V" H 1565 5473 50  0000 C CNN
-F 2 "" H 1550 5300 50  0001 C CNN
-F 3 "" H 1550 5300 50  0001 C CNN
-	1    1550 5300
+P 900 5200
+F 0 "#PWR07" H 900 5300 50  0001 C CNN
+F 1 "-5V" H 915 5373 50  0000 C CNN
+F 2 "" H 900 5200 50  0001 C CNN
+F 3 "" H 900 5200 50  0001 C CNN
+	1    900  5200
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1133,20 +1045,15 @@ Wire Wire Line
 	5650 2300 5400 2300
 Wire Wire Line
 	5650 2400 6900 2400
-Wire Wire Line
-	6900 2400 6900 2500
 Connection ~ 5650 2400
 Wire Wire Line
 	5650 2400 5650 2450
-Wire Wire Line
-	6900 2500 6900 2700
 Wire Wire Line
 	6900 2700 7050 2700
 Wire Wire Line
 	7500 2700 7500 2400
 Wire Wire Line
 	7350 2700 7500 2700
-Connection ~ 6900 2500
 $Comp
 L power:GND #PWR018
 U 1 1 5F3057E7
@@ -1525,7 +1432,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 3300 9200 3600
 $Comp
-L eec:MUR460 D3
+L EtapaPotencia-rescue:MUR460-eec D3
 U 1 1 5F21FAEE
 P 9200 4800
 F 0 "D3" V 9396 4672 50  0000 R CNN
@@ -1557,7 +1464,7 @@ F 24 "yes" H 9200 7400 50  0001 L CNN "imported"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L eec:MUR460 D2
+L EtapaPotencia-rescue:MUR460-eec D2
 U 1 1 5F220C6E
 P 9200 3900
 F 0 "D2" V 9396 3772 50  0000 R CNN
@@ -1589,7 +1496,7 @@ F 24 "yes" H 9200 6500 50  0001 L CNN "imported"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L eec:MUR460 D1
+L EtapaPotencia-rescue:MUR460-eec D1
 U 1 1 5F2217EB
 P 7250 4300
 F 0 "D1" V 7446 4172 50  0000 R CNN
@@ -1619,5 +1526,98 @@ F 23 "8E7B49A0-6CC1-441A-B5E2-4AAE5A9DFC8B" H 7250 6800 50  0001 L CNN "vault re
 F 24 "yes" H 7250 6900 50  0001 L CNN "imported"
 	1    7250 4300
 	0    -1   -1   0   
+$EndComp
+$Comp
+L Comparator:LM393 U4
+U 3 1 5F1A3B33
+P 950 7150
+F 0 "U4" H 950 6783 50  0000 C CNN
+F 1 "LM393" H 950 6874 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W10.16mm" H 950 7150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 950 7150 50  0001 C CNN
+	3    950  7150
+	1    0    0    1   
+$EndComp
+$Comp
+L power:-5V #PWR028
+U 1 1 5F1A58AA
+P 850 7450
+F 0 "#PWR028" H 850 7550 50  0001 C CNN
+F 1 "-5V" H 865 7623 50  0000 C CNN
+F 2 "" H 850 7450 50  0001 C CNN
+F 3 "" H 850 7450 50  0001 C CNN
+	1    850  7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR027
+U 1 1 5F1A5C95
+P 850 6850
+F 0 "#PWR027" H 850 6700 50  0001 C CNN
+F 1 "+12V" H 865 7023 50  0000 C CNN
+F 2 "" H 850 6850 50  0001 C CNN
+F 3 "" H 850 6850 50  0001 C CNN
+	1    850  6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 1 1 5F1AAD94
+P 1800 2400
+F 0 "U1" H 1800 2767 50  0000 C CNN
+F 1 "TL084" H 1800 2676 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 1750 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1850 2600 50  0001 C CNN
+	1    1800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 2 1 5F1ADA5E
+P 3100 3600
+F 0 "U1" H 3100 3967 50  0000 C CNN
+F 1 "TL084" H 3100 3876 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 3050 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 3150 3800 50  0001 C CNN
+	2    3100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2400 6900 2500
+$Comp
+L Amplifier_Operational:TL084 U1
+U 3 1 5F1AF993
+P 7200 2400
+F 0 "U1" H 7200 2767 50  0000 C CNN
+F 1 "TL084" H 7200 2676 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 7150 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7250 2600 50  0001 C CNN
+	3    7200 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 2500
+Wire Wire Line
+	6900 2500 6900 2700
+$Comp
+L Amplifier_Operational:TL084 U1
+U 5 1 5F1BC580
+P 1000 4900
+F 0 "U1" H 958 4946 50  0000 L CNN
+F 1 "TL084" H 958 4855 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W10.16mm" H 950 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1050 5100 50  0001 C CNN
+	5    1000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U2
+U 1 1 5F3DE104
+P 2500 6250
+F 0 "U2" H 2500 5883 50  0000 C CNN
+F 1 "TL082" H 2500 5974 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W10.16mm" H 2500 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 2500 6250 50  0001 C CNN
+	1    2500 6250
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
