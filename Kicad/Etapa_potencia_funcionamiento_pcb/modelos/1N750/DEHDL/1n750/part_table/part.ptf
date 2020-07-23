@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1N750'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Microsemi Corporation", "1N750" (!) = "", "DIOAD1256W56L444D203", "Diodes, Axial Diameter Horizontal Mounting", "1N750", "https://www.arrow.com/en/products/1n750/microsemi", "494-1N750(DO-35)", "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/1N750?qs=Xwz%252BGKGy4sB1rzIdx4SmVg%3D%3D", "Zener Diodes Voltage Regulator", "https://www.microsemi.com/document-portal/doc_view/10928-sa5-7-datasheet"
+END_PART
+
+END.

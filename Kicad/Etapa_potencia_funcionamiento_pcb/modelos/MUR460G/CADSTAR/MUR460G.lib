@@ -1,0 +1,18 @@
+.MUR460G :1 ;ON SEMICONDUCTOR - MUR460G - DIODE, ULTRA-FAST
+DIOAD2860W130L840D505
+*STM D
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN MUR460G
+~!Manufacturer_Name (ON Semiconductor)
+~!Manufacturer_Part_Number (MUR460G)
+~!Arrow Part Number (MUR460G)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/mur460g/on-semiconductor)
+~!Mouser Part Number (863-MUR460G)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MUR460G?qs=Gev%252BmEvV0iZtA9Av%2FtBXVg%3D%3D)
+~!Link Datasheet (http://www.onsemi.com/pub/Collateral/MUR420-D.PDF)
+~!Height (-)
+~!3D_Model (MUR460G)
+MUR460G
+1.1!U 2.1!U 

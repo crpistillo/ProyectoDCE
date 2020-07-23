@@ -1,0 +1,9 @@
+Manufacturer=Microsemi Corporation
+PartNumber=1N750
+PartCategory=Zener Diode
+PackageCategory=Diodes, Axial Diameter Horizontal Mounting
+PinCount=2
+Version=2.1
+Released=2018-12-10 15:38:24
+Downloaded=2020-07-22 23:08:21
+3D=Y

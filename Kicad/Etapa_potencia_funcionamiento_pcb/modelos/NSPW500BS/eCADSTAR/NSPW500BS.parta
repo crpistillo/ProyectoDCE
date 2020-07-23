@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_1873735"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-05-19-10:02:11)
+    (utime 2020-05-20-07:12:51)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "NSPW500BS")
+)
+
+
+(pinAssign "ECS_1873735"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-05-19-10:02:11)
+    (utime 2020-05-20-07:12:51)
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1873735")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "NSPW500BS")
+)
+
+
+(part "NSPW500BS"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-05-19-10:02:11)
+    (utime 2020-05-20-07:12:51)
+    (packageRef "NSPW500BS")
+    (pinAssignRef "ECS_1873735")
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "LED")
+    (property "description" "4 V White LED Through Hole, Nichia NSPW500BS")
+    (property "Manufacturer_Name" "NICHIA")
+    (property "Manufacturer_Part_Number" "NSPW500BS")
+    (property "Arrow_Part_Number" "NSPW500BS")
+    (property "Arrow_Price/Stock" "")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "Datasheet_Link" "https://www.digchip.com/datasheets/parts/datasheet/1014/NSPW500BS-pdf.php")
+    (property "compAreaTopHeight" 13.3)
+)
+
+
