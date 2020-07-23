@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "NSPW500BS"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "NSPW500BS")
+        (spec "default")
+    )
+)
