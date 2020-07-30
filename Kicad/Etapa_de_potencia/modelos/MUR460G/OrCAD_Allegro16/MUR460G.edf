@@ -1,0 +1,104 @@
+
+(EDIF
+  (rename &MUR460G "MUR460G")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2020 07 22 23 12 12)
+      (dataOrigin "225874/290075/2.47/2/3/Diode")
+      (program "SamacSys ECAD Model MUR460G"
+        (version "1.1"))))
+  (library
+  (rename &MUR460G "MUR460G")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &MUR460G "MUR460G")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "D")
+          (property (rename PACKAGENAME "PackageName") (string "MUR460G"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "DIOAD2860W130L840D505"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "ON Semiconductor"))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "MUR460G"))
+          (property (rename &Arrow_Part_Number "Arrow Part Number") (string "MUR460G"))
+          (property (rename &Arrow_Price_Stock "Arrow Price/Stock") (string "https://www.arrow.com/en/products/mur460g/on-semiconductor"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "863-MUR460G"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MUR460G?qs=Gev%252BmEvV0iZtA9Av%2FtBXVg%3D%3D"))
+          (property (rename &Description "Description") (string "ON SEMICONDUCTOR - MUR460G - DIODE, ULTRA-FAST"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "http://www.onsemi.com/pub/Collateral/MUR420-D.PDF"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "MUR460G"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &K "K")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &A "A")
+            (designator "2")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &K)
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -100) (pt 0 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -100))))
+            )
+            (portImplementation
+              (name &A)
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 200 -100) (pt 400 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt 400 -100))))
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 -100)
+                  (pt 200 0)
+                  (pt 200 -200)
+                  (pt 0 -100)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 0 -200)
+                )
+              )
+            )
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 250 30))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 250 -70))))
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=IRF630
+PartCategory=Integrated Circuit
+PackageCategory=Transistor Outline, Vertical
+PinCount=3
+Version=2.1
+Released=2015-07-22 14:47:00
+Downloaded=2020-07-22 23:13:07
+3D=Y
