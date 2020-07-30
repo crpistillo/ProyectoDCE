@@ -1,9 +1,0 @@
-Manufacturer=NICHIA
-PartNumber=NSPW500BS
-PartCategory=LED
-PackageCategory=Other
-PinCount=2
-Version=1.2
-Released=2020-05-19 10:02:11
-Downloaded=2020-07-23 00:04:19
-3D=Y

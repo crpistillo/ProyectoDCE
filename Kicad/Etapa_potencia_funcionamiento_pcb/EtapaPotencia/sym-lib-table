@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name EtapaPotencia-rescue)(type Legacy)(uri ${KIPRJMOD}/EtapaPotencia-rescue.lib)(options "")(descr ""))
-  (lib (name eec)(type Legacy)(uri "C:/Users/nacho/Desktop/Kicad/New folder/modelos/Diode_On Semiconductor_MUR460/eec.lib")(options "")(descr ""))
-)

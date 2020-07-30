@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name modelos)(type KiCad)(uri "C:/Users/nacho/Desktop/Kicad/New folder/modelos")(options "")(descr ""))
-  (lib (name kicad2)(type KiCad)(uri "C:/Users/nacho/Desktop/Kicad/New folder/modelos/kicad2")(options "")(descr ""))
-  (lib (name eec)(type KiCad)(uri "C:/Users/nacho/Desktop/Kicad/New folder/modelos/Diode_On Semiconductor_MUR460/eec.pretty")(options "")(descr ""))
-)

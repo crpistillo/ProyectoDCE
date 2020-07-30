@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP 1N750
-D Zener Diodes Voltage Regulator
-K
-F https://www.microsemi.com/document-portal/doc_view/10928-sa5-7-datasheet
-$ENDCMP
-#
-#End Doc Library
