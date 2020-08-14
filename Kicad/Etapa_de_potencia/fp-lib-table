@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name modelos)(type KiCad)(uri ${KIPRJMOD}/modelos)(options "")(descr ""))
+  (lib (name OPA365AID)(type KiCad)(uri ${KIPRJMOD}/modelos/OPA365AID)(options "")(descr ""))
+  (lib (name TLV3501AID)(type KiCad)(uri ${KIPRJMOD}/modelos/TLV3501AID)(options "")(descr ""))
+  (lib (name kicad2)(type KiCad)(uri ${KIPRJMOD}/modelos/kicad2)(options "")(descr ""))
+  (lib (name IRF510)(type KiCad)(uri ${KIPRJMOD}/modelos/IRF510)(options "")(descr ""))
+)

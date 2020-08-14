@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name 1N750)(type Legacy)(uri ${KIPRJMOD}/modelos/kicad2/1N750.lib)(options "")(descr ""))
+  (lib (name IRF630)(type Legacy)(uri ${KIPRJMOD}/modelos/kicad2/IRF630.lib)(options "")(descr ""))
+  (lib (name MUR460G)(type Legacy)(uri ${KIPRJMOD}/modelos/kicad2/MUR460G.lib)(options "")(descr ""))
+  (lib (name NSPW500BS)(type Legacy)(uri ${KIPRJMOD}/modelos/kicad2/NSPW500BS.lib)(options "")(descr ""))
+  (lib (name TLV3501AID)(type Legacy)(uri ${KIPRJMOD}/modelos/TLV3501AID/TLV3501AID.lib)(options "")(descr ""))
+  (lib (name IRF510)(type Legacy)(uri ${KIPRJMOD}/modelos/IRF510/IRF510.lib)(options "")(descr ""))
+)
