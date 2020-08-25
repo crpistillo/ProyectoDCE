@@ -155,14 +155,7 @@ Connection ~ 2100 3150
 Wire Wire Line
 	2450 3150 2600 3150
 Wire Wire Line
-	2600 3150 2600 3700
-Wire Wire Line
-	2600 3700 2800 3700
-Wire Wire Line
-	2600 3700 2600 4150
-Wire Wire Line
 	2600 4150 2650 4150
-Connection ~ 2600 3700
 Wire Wire Line
 	2600 4150 2600 4500
 Wire Wire Line
@@ -612,21 +605,12 @@ $EndComp
 Wire Wire Line
 	5650 1500 5650 1850
 Wire Wire Line
-	5650 2150 5650 2300
-Wire Wire Line
 	6100 2150 6100 2300
 Wire Wire Line
 	6900 2300 6100 2300
 Connection ~ 6100 2300
 Wire Wire Line
 	6100 2300 6100 2450
-Wire Wire Line
-	6100 2300 5650 2300
-Connection ~ 5650 2300
-Wire Wire Line
-	5650 2300 5650 2400
-Wire Wire Line
-	5650 2300 5400 2300
 Wire Wire Line
 	5650 2400 6900 2400
 Connection ~ 5650 2400
@@ -1540,7 +1524,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 3850 8850 3550
 Wire Wire Line
-	8850 3300 9100 3300
+	8850 3300 9050 3300
 Connection ~ 8850 3550
 Wire Wire Line
 	8850 4750 8850 4900
@@ -1641,17 +1625,60 @@ Wire Wire Line
 Wire Wire Line
 	9400 4350 9550 4350
 Wire Wire Line
-	12250 4350 12550 4350
-Wire Wire Line
 	14350 3950 14350 4750
 Wire Wire Line
 	9350 3950 14350 3950
 Wire Wire Line
-	12550 1800 12550 4350
+	12550 1800 12550 4150
 Wire Wire Line
 	6100 1800 12550 1800
 Wire Wire Line
 	13150 1650 10500 1650
 Wire Wire Line
 	10500 1650 10500 1500
+Wire Wire Line
+	2600 3700 2600 4150
+Wire Wire Line
+	2600 3150 2600 3700
+Connection ~ 2600 3700
+Wire Wire Line
+	2600 3700 2800 3700
+Wire Wire Line
+	5650 2150 5650 2400
+Wire Wire Line
+	5400 2300 6100 2300
+$Comp
+L Device:C Cbypass1
+U 1 1 5F63E5DE
+P 9050 3150
+F 0 "Cbypass1" H 8935 3104 50  0000 R CNN
+F 1 "0.22u" H 8935 3195 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9088 3000 50  0001 C CNN
+F 3 "~" H 9050 3150 50  0001 C CNN
+	1    9050 3150
+	-1   0    0    1   
+$EndComp
+Connection ~ 9050 3300
+Wire Wire Line
+	9050 3300 9100 3300
+$Comp
+L power:GND #PWR04
+U 1 1 5F63F972
+P 9050 2950
+F 0 "#PWR04" H 9050 2700 50  0001 C CNN
+F 1 "GND" H 9055 2777 50  0000 C CNN
+F 2 "" H 9050 2950 50  0001 C CNN
+F 3 "" H 9050 2950 50  0001 C CNN
+	1    9050 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 3000 9050 2950
+Wire Wire Line
+	12250 4150 12550 4150
+Wire Wire Line
+	12550 4150 12550 4350
+Connection ~ 12550 4150
+Wire Wire Line
+	12550 4150 12550 4350
 $EndSCHEMATC
