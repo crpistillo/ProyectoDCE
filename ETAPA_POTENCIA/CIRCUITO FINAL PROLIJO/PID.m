@@ -7,9 +7,13 @@ s = tf('s');10e9
 Rp= 220e+3; 
 Cp= 1e-12;
 
-C = -Rp / (Rp*Cp*s + 1);
+Rs= 100e+3;
+Cs= 150e-12;
 
-SIM1=dlmread('C(s).txt','\t',1,0);
+C = -Rp*(1+s*Rs*Cs)/(s^2*(Rp*Cp*Rs*Cs) + s*(Rp*Cp+Rs*Cs+Rp*Cs) +1);
+
+
+SIM1=dlmread('PID.txt','\t',1,0);
 %SIM2=dlmread('f(s)_fase.txt','\t',1,0);
 
 Hf = figure(1);
