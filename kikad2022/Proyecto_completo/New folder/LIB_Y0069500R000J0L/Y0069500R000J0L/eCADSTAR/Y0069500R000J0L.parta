@@ -1,0 +1,72 @@
+(Japanese_coding: sjis)
+(function "ECS_769908"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-04-08-10:53:16)
+    (utime 2020-04-09-07:04:31)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "Y0069500R000J0L")
+)
+
+
+(pinAssign "ECS_769908"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-04-08-10:53:16)
+    (utime 2020-04-09-07:04:31)
+    (interface
+        (port "1" (symbPinId 1) (portName "CCW") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "WIPER") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "CW") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_769908")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "Y0069500R000J0L")
+)
+
+
+(part "Y0069500R000J0L"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-04-08-10:53:16)
+    (utime 2020-04-09-07:04:31)
+    (packageRef "Y0069500R000J0L")
+    (pinAssignRef "ECS_769908")
+    (interface
+        (port "1" (symbPinId 1) (portName "CCW") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "WIPER") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "CW") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "VR")
+    (property "description" "Trimmer Resistors - Through Hole 500ohms 1/4w 9.53mm sq seal")
+    (property "Manufacturer_Name" "Vishay")
+    (property "Manufacturer_Part_Number" "Y0069500R000J0L")
+    (property "Mouser_Part_Number" "71-1260W-J-500")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Precision-Group-Foil-Resistors/Y0069500R000J0L?qs=Omyi%252BwOkBJXcX3twqDvNbQ%3D%3D")
+    (property "Arrow_Part_Number" "")
+    (property "Arrow_Price/Stock" "")
+    (property "Datasheet_Link" "http://www.vishaypg.com/docs/63054/Accutrim_1260_RJ24.pdf")
+    (property "compAreaTopHeight" 12.7)
+)
+
+

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPA365AIDBVR
+D 50MHz, Low-Distortion, High CMRR RRI/O, Single-Supply OPERATIONAL AMPLIFIER
+K
+F http://www.ti.com/lit/gpn/opa365
+$ENDCMP
+#
+#End Doc Library

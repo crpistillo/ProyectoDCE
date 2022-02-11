@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C0805C102M5RACTU
+D Kemet SMD Comm X7R, Ceramic, 1000 pF, 20%, 50 V, X7R, SMD, MLCC, Temperature Stable, Class II, 0805
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA10/2410041.pdf
+$ENDCMP
+#
+#End Doc Library

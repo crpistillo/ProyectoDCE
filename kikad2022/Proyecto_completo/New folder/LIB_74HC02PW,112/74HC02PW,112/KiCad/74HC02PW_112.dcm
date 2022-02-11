@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC02PW,112
+D 74HC(T)02 - Quad 2-input NOR gate@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf
+$ENDCMP
+#
+#End Doc Library

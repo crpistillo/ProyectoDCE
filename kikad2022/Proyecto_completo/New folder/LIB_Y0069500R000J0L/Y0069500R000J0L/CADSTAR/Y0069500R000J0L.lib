@@ -1,0 +1,18 @@
+.Y0069500R000J0L :1 ;Trimmer Resistors - Through Hole 500ohms 1/4w 9.53mm sq seal
+Y0069500R000J0L
+*STM VR
+*NGS
+*PLB 1="CCW" 2="WIPER" 3="CW"
+*MXP 3
+*DFN Y0069500R000J0L
+~!Manufacturer_Name (Vishay)
+~!Manufacturer_Part_Number (Y0069500R000J0L)
+~!Mouser Part Number (71-1260W-J-500)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Vishay-Precision-Group-Foil-Resistors/Y0069500R000J0L?qs=Omyi%252BwOkBJXcX3twqDvNbQ%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (http://www.vishaypg.com/docs/63054/Accutrim_1260_RJ24.pdf)
+~!Height (12.7mm)
+~!3D_Model (Y0069500R000J0L)
+Y0069500R000J0L
+1.1!U 2.1!U 3.1!U 

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N5825
+D Schottky Diodes & Rectifiers Schottky Rectifier, 5A, 350v, 1470pF
+K
+F http://www.mouser.com/ds/2/523/1n5823-25-908226.pdf
+$ENDCMP
+#
+#End Doc Library

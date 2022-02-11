@@ -1,0 +1,943 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 61EF9606
+P 7350 4250
+F 0 "C1" H 7465 4296 50  0000 L CNN
+F 1 "470u" H 7465 4205 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 7388 4100 50  0001 C CNN
+F 3 "~" H 7350 4250 50  0001 C CNN
+	1    7350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61EF9ACB
+P 7700 4050
+F 0 "C2" H 7815 4096 50  0000 L CNN
+F 1 "0.1u" H 7815 4005 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 7738 3900 50  0001 C CNN
+F 3 "~" H 7700 4050 50  0001 C CNN
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61EFA3BE
+P 7950 4300
+F 0 "R1" V 7743 4300 50  0000 C CNN
+F 1 "47k" V 7834 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7880 4300 50  0001 C CNN
+F 3 "~" H 7950 4300 50  0001 C CNN
+	1    7950 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61EFA953
+P 8250 4450
+F 0 "R2" H 8180 4404 50  0000 R CNN
+F 1 "47k" H 8180 4495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 4450 50  0001 C CNN
+F 3 "~" H 8250 4450 50  0001 C CNN
+	1    8250 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5820 D2
+U 1 1 61EFB158
+P 8800 4150
+F 0 "D2" V 8754 4230 50  0000 L CNN
+F 1 "1N5820" V 8845 4230 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 8800 3975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 8800 4150 50  0001 C CNN
+	1    8800 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 61EFBC68
+P 9550 4100
+F 0 "C3" H 9665 4146 50  0000 L CNN
+F 1 "220u" H 9665 4055 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 9588 3950 50  0001 C CNN
+F 3 "~" H 9550 4100 50  0001 C CNN
+	1    9550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 61EFCF1D
+P 9150 3850
+F 0 "L1" V 9340 3850 50  0000 C CNN
+F 1 "33u" V 9249 3850 50  0000 C CNN
+F 2 "Inductor_SMD:L_TDK_NLV32_3.2x2.5mm" H 9150 3850 50  0001 C CNN
+F 3 "~" H 9150 3850 50  0001 C CNN
+	1    9150 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N5400 D3
+U 1 1 61EFD6CE
+P 9950 4100
+F 0 "D3" V 9904 4180 50  0000 L CNN
+F 1 "1N5400" V 9995 4180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 9950 3925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 9950 4100 50  0001 C CNN
+	1    9950 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L LM2596S-5.0:LM2596S-5.0 VR1
+U 1 1 61F00F49
+P 8150 3300
+F 0 "VR1" H 8150 3867 50  0000 C CNN
+F 1 "LM2596S-5.0" H 8150 3776 50  0000 C CNN
+F 2 "footprints:KTT0005B" H 8150 3300 50  0001 L BNN
+F 3 "" H 8150 3300 50  0001 L BNN
+F 4 "E" H 8150 3300 50  0001 L BNN "PARTREV"
+F 5 "4.83 mm" H 8150 3300 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "102658" H 8150 3300 50  0001 L BNN "SNAPEDA_PACKAGE_ID"
+F 7 "Texas Instruments" H 8150 3300 50  0001 L BNN "MANUFACTURER"
+F 8 "IPC-7351B" H 8150 3300 50  0001 L BNN "STANDARD"
+	1    8150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3600 8850 3700
+Wire Wire Line
+	8850 3000 8900 3000
+Wire Wire Line
+	8950 3000 8950 3850
+Wire Wire Line
+	8950 3850 9000 3850
+Wire Wire Line
+	8950 3850 8800 3850
+Wire Wire Line
+	8800 3850 8800 4000
+Connection ~ 8950 3850
+Wire Wire Line
+	9300 3850 9550 3850
+Wire Wire Line
+	9950 3850 9950 3950
+Wire Wire Line
+	9550 3950 9550 3850
+Connection ~ 9550 3850
+Wire Wire Line
+	9550 3850 9950 3850
+Wire Wire Line
+	8850 3700 8850 3800
+Wire Wire Line
+	8850 3800 8700 3800
+Wire Wire Line
+	8700 3800 8700 4650
+Wire Wire Line
+	8800 4650 8800 4300
+Connection ~ 8850 3700
+Wire Wire Line
+	9550 4250 9550 4650
+Connection ~ 8800 4650
+Wire Wire Line
+	9950 4250 9950 4650
+Wire Wire Line
+	8800 4650 9550 4650
+Connection ~ 9550 4650
+Wire Wire Line
+	9550 4650 9950 4650
+Wire Wire Line
+	7450 3400 8900 3400
+Wire Wire Line
+	8900 3400 8900 3000
+Connection ~ 8900 3000
+Wire Wire Line
+	8900 3000 8950 3000
+Wire Wire Line
+	7450 3200 7350 3200
+Wire Wire Line
+	7350 3200 7350 3850
+Wire Wire Line
+	7350 3850 8200 3850
+Wire Wire Line
+	8200 3850 8200 4300
+Wire Wire Line
+	8200 4300 8250 4300
+Wire Wire Line
+	8100 4300 8200 4300
+Connection ~ 8200 4300
+Wire Wire Line
+	8250 4600 8250 4650
+Connection ~ 8700 4650
+Wire Wire Line
+	8700 4650 8800 4650
+Wire Wire Line
+	7800 4300 7700 4300
+Wire Wire Line
+	7700 4300 7700 4200
+Wire Wire Line
+	7700 3900 7350 3900
+Wire Wire Line
+	7350 4100 7350 3900
+Connection ~ 7350 3900
+Wire Wire Line
+	7350 3900 7250 3900
+Wire Wire Line
+	7350 4400 7350 4650
+Wire Wire Line
+	7350 4650 8250 4650
+Connection ~ 8250 4650
+Wire Wire Line
+	8250 4650 8700 4650
+Wire Wire Line
+	7450 3000 7250 3000
+Wire Wire Line
+	7250 3000 7250 3900
+Connection ~ 7250 3900
+Wire Wire Line
+	7250 3900 7100 3900
+$Comp
+L power:GND #PWR0101
+U 1 1 61F36388
+P 9050 5650
+F 0 "#PWR0101" H 9050 5400 50  0001 C CNN
+F 1 "GND" H 9055 5477 50  0000 C CNN
+F 2 "" H 9050 5650 50  0001 C CNN
+F 3 "" H 9050 5650 50  0001 C CNN
+	1    9050 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 61F36C5B
+P 9750 5200
+F 0 "C5" H 9865 5246 50  0000 L CNN
+F 1 "0.1u" H 9865 5155 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 9788 5050 50  0001 C CNN
+F 3 "~" H 9750 5200 50  0001 C CNN
+	1    9750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 61F375FC
+P 8300 5300
+F 0 "C4" H 8415 5346 50  0000 L CNN
+F 1 "0.33u" H 8415 5255 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 8338 5150 50  0001 C CNN
+F 3 "~" H 8300 5300 50  0001 C CNN
+	1    8300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5650 9050 5350
+Wire Wire Line
+	9750 5050 9350 5050
+Wire Wire Line
+	8750 5050 8300 5050
+Wire Wire Line
+	8300 5050 8300 5150
+$Comp
+L power:GND #PWR0102
+U 1 1 61F3A199
+P 8300 5450
+F 0 "#PWR0102" H 8300 5200 50  0001 C CNN
+F 1 "GND" H 8305 5277 50  0000 C CNN
+F 2 "" H 8300 5450 50  0001 C CNN
+F 3 "" H 8300 5450 50  0001 C CNN
+	1    8300 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61F3A456
+P 9750 5350
+F 0 "#PWR0103" H 9750 5100 50  0001 C CNN
+F 1 "GND" H 9755 5177 50  0000 C CNN
+F 2 "" H 9750 5350 50  0001 C CNN
+F 3 "" H 9750 5350 50  0001 C CNN
+	1    9750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 61F3B887
+P 10450 5150
+F 0 "J3" H 10422 5032 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10422 5123 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 10450 5150 50  0001 C CNN
+F 3 "~" H 10450 5150 50  0001 C CNN
+	1    10450 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 61F3C860
+P 10250 5150
+F 0 "#PWR0105" H 10250 4900 50  0001 C CNN
+F 1 "GND" H 10255 4977 50  0000 C CNN
+F 2 "" H 10250 5150 50  0001 C CNN
+F 3 "" H 10250 5150 50  0001 C CNN
+	1    10250 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5050 8300 5050
+Connection ~ 8300 5050
+Wire Wire Line
+	10250 5050 9750 5050
+Connection ~ 9750 5050
+$Comp
+L power:GND #PWR0106
+U 1 1 61F4547A
+P 10300 3850
+F 0 "#PWR0106" H 10300 3600 50  0001 C CNN
+F 1 "GND" H 10305 3677 50  0000 C CNN
+F 2 "" H 10300 3850 50  0001 C CNN
+F 3 "" H 10300 3850 50  0001 C CNN
+	1    10300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3850 10250 3850
+Connection ~ 9950 3850
+$Comp
+L Connector:Conn_01x02_Male J60v1
+U 1 1 61F4752C
+P 4350 4000
+F 0 "J60v1" H 4322 3882 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4322 3973 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4350 4000 50  0001 C CNN
+F 3 "~" H 4350 4000 50  0001 C CNN
+	1    4350 4000
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 61F47FAD
+P 10450 4550
+F 0 "J4" H 10422 4524 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10422 4433 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 10450 4550 50  0001 C CNN
+F 3 "~" H 10450 4550 50  0001 C CNN
+	1    10450 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 4550 10250 3850
+Connection ~ 10250 3850
+Wire Wire Line
+	10250 3850 9950 3850
+Wire Wire Line
+	10250 4650 9950 4650
+Connection ~ 9950 4650
+$Comp
+L power:GND #PWR0107
+U 1 1 61F4C31A
+P 6250 4200
+F 0 "#PWR0107" H 6250 3950 50  0001 C CNN
+F 1 "GND" H 6255 4027 50  0000 C CNN
+F 2 "" H 6250 4200 50  0001 C CNN
+F 3 "" H 6250 4200 50  0001 C CNN
+	1    6250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:TIP41C Q2
+U 1 1 61F7BE95
+P 5700 4000
+F 0 "Q2" V 6028 4000 50  0000 C CNN
+F 1 "TIP41C" V 5937 4000 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5950 3925 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 5700 4000 50  0001 L CNN
+	1    5700 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 3900 5900 3900
+Connection ~ 6250 3900
+Wire Wire Line
+	5700 4200 5700 4350
+$Comp
+L Device:R R3
+U 1 1 61F806BD
+P 4850 4100
+F 0 "R3" V 4643 4100 50  0000 C CNN
+F 1 "1k" V 4734 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 4100 50  0001 C CNN
+F 3 "~" H 4850 4100 50  0001 C CNN
+	1    4850 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5400 D1
+U 1 1 61F822DE
+P 5650 4950
+F 0 "D1" V 5604 5030 50  0000 L CNN
+F 1 "1N5400" V 5695 5030 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 5650 4775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 5650 4950 50  0001 C CNN
+	1    5650 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3900 4850 3900
+Wire Wire Line
+	4850 3900 4850 3950
+Wire Wire Line
+	4550 4000 4550 5150
+$Comp
+L power:GND #PWR0108
+U 1 1 61F88DAB
+P 5650 5100
+F 0 "#PWR0108" H 5650 4850 50  0001 C CNN
+F 1 "GND" H 5655 4927 50  0000 C CNN
+F 2 "" H 5650 5100 50  0001 C CNN
+F 3 "" H 5650 5100 50  0001 C CNN
+	1    5650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 61F90603
+P 6250 4050
+F 0 "C6" H 6365 4096 50  0000 L CNN
+F 1 "480u" H 6365 4005 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 6288 3900 50  0001 C CNN
+F 3 "~" H 6250 4050 50  0001 C CNN
+	1    6250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N2222:2N2222 Q1
+U 1 1 61F96275
+P 5400 4750
+F 0 "Q1" V 6075 4750 50  0000 C CNN
+F 1 "2N2222" V 5984 4750 50  0000 C CNN
+F 2 "footprints:2N2222" H 5950 4600 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-14/DSA-265357.pdf" H 5950 4500 50  0001 L CNN
+F 4 "NPN Silicon Planar Transistor" H 5950 4400 50  0001 L CNN "Description"
+F 5 "5.2" H 5950 4300 50  0001 L CNN "Height"
+F 6 "Infineon" H 5950 4200 50  0001 L CNN "Manufacturer_Name"
+F 7 "2N2222" H 5950 4100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 5950 4000 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 5950 3900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5950 3800 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 5950 3700 50  0001 L CNN "Arrow Price/Stock"
+	1    5400 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 3900 5500 3900
+Wire Wire Line
+	5650 4750 5400 4750
+Wire Wire Line
+	5650 4750 5650 4800
+Wire Wire Line
+	4850 4750 5400 4750
+Wire Wire Line
+	4850 4250 4850 4750
+Connection ~ 5400 4750
+Wire Wire Line
+	4850 3900 5100 3900
+Connection ~ 4850 3900
+Connection ~ 5100 3900
+Wire Wire Line
+	5100 3900 5100 4350
+Wire Wire Line
+	4550 5150 5650 5150
+Wire Wire Line
+	5650 5150 5650 5100
+Connection ~ 5650 5100
+$Comp
+L 1N5825:1N5825 D4
+U 1 1 61FA4A7E
+P 7100 3900
+F 0 "D4" H 7400 3633 50  0000 C CNN
+F 1 "1N5825" H 7400 3724 50  0000 C CNN
+F 2 "footprints:1N5824" H 7550 3900 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/523/1n5823-25-908226.pdf" H 7550 3800 50  0001 L CNN
+F 4 "Schottky Diodes & Rectifiers Schottky Rectifier, 5A, 350v, 1470pF" H 7550 3700 50  0001 L CNN "Description"
+F 5 "" H 7550 3600 50  0001 L CNN "Height"
+F 6 "Microsemi Corporation" H 7550 3500 50  0001 L CNN "Manufacturer_Name"
+F 7 "1N5825" H 7550 3400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "494-1N5825" H 7550 3300 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/1N5825/?qs=6jAvgNDGUA9CL%2FdhCw1Tdg%3D%3D" H 7550 3200 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1N5825" H 7550 3100 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/1n5825/microsemi" H 7550 3000 50  0001 L CNN "Arrow Price/Stock"
+	1    7100 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 61FCAAE1
+P 7800 2000
+F 0 "C7" H 7915 2046 50  0000 L CNN
+F 1 "680u" H 7915 1955 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 7838 1850 50  0001 C CNN
+F 3 "~" H 7800 2000 50  0001 C CNN
+	1    7800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 61FCAAF9
+P 9650 2050
+F 0 "C8" H 9765 2096 50  0000 L CNN
+F 1 "220u" H 9765 2005 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 9688 1900 50  0001 C CNN
+F 3 "~" H 9650 2050 50  0001 C CNN
+	1    9650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 61FCAAFF
+P 9250 1800
+F 0 "L2" V 9440 1800 50  0000 C CNN
+F 1 "33u" V 9349 1800 50  0000 C CNN
+F 2 "Inductor_SMD:L_TDK_NLV32_3.2x2.5mm" H 9250 1800 50  0001 C CNN
+F 3 "~" H 9250 1800 50  0001 C CNN
+	1    9250 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 950  9050 1800
+Wire Wire Line
+	9050 1800 9100 1800
+Wire Wire Line
+	9400 1800 9650 1800
+Wire Wire Line
+	9650 1900 9650 1800
+Connection ~ 9650 1800
+Wire Wire Line
+	8950 1750 8800 1750
+Wire Wire Line
+	9650 2200 9650 2600
+Wire Wire Line
+	7550 1150 7450 1150
+Connection ~ 8800 2600
+Wire Wire Line
+	7800 2250 7800 2150
+Wire Wire Line
+	7550 950  7350 950 
+Wire Wire Line
+	7350 950  7350 1850
+Connection ~ 7350 1850
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 61FCAB51
+P 10550 1900
+F 0 "J5" H 10522 1782 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10522 1873 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 10550 1900 50  0001 C CNN
+F 3 "~" H 10550 1900 50  0001 C CNN
+	1    10550 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9650 1800 10350 1800
+$Comp
+L power:GND #PWR0109
+U 1 1 61FCED69
+P 7450 1150
+F 0 "#PWR0109" H 7450 900 50  0001 C CNN
+F 1 "GND" H 7455 977 50  0000 C CNN
+F 2 "" H 7450 1150 50  0001 C CNN
+F 3 "" H 7450 1150 50  0001 C CNN
+	1    7450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 61FCF3B7
+P 8800 2600
+F 0 "#PWR0110" H 8800 2350 50  0001 C CNN
+F 1 "GND" H 8805 2427 50  0000 C CNN
+F 2 "" H 8800 2600 50  0001 C CNN
+F 3 "" H 8800 2600 50  0001 C CNN
+	1    8800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2250 8800 2250
+Wire Wire Line
+	8800 1750 8800 2250
+Connection ~ 8800 2250
+Wire Wire Line
+	8800 2250 8800 2600
+Wire Wire Line
+	7350 1850 7800 1850
+Wire Wire Line
+	6400 1850 6400 3900
+Wire Wire Line
+	6250 3900 6400 3900
+Wire Wire Line
+	6400 1850 7350 1850
+Connection ~ 6400 3900
+Wire Wire Line
+	6400 3900 6500 3900
+Wire Wire Line
+	9650 1350 9650 1800
+Wire Wire Line
+	7550 1350 9650 1350
+Wire Wire Line
+	8950 950  9050 950 
+$Comp
+L power:GND #PWR0111
+U 1 1 61FD919B
+P 10350 1900
+F 0 "#PWR0111" H 10350 1650 50  0001 C CNN
+F 1 "GND" H 10355 1727 50  0000 C CNN
+F 2 "" H 10350 1900 50  0001 C CNN
+F 3 "" H 10350 1900 50  0001 C CNN
+	1    10350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N5824:1N5824 D5
+U 1 1 61FDD9C5
+P 9050 1800
+F 0 "D5" V 9304 1930 50  0000 L CNN
+F 1 "1N5824" V 9395 1930 50  0000 L CNN
+F 2 "footprints:1N5824" H 9500 1800 50  0001 L CNN
+F 3 "https://www.microsemi.com/document-portal/doc_download/5865-1n5823-25-datasheet" H 9500 1700 50  0001 L CNN
+F 4 "Schottky Diodes & Rectifiers Power Schottky" H 9500 1600 50  0001 L CNN "Description"
+F 5 "" H 9500 1500 50  0001 L CNN "Height"
+F 6 "Microsemi Corporation" H 9500 1400 50  0001 L CNN "Manufacturer_Name"
+F 7 "1N5824" H 9500 1300 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "494-1N5824" H 9500 1200 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/1N5824?qs=TXMzd3F6EyleEEWqakQxJw%3D%3D" H 9500 1100 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1N5824" H 9500 1000 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/1n5824/microsemi" H 9500 900 50  0001 L CNN "Arrow Price/Stock"
+	1    9050 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 9050 1800
+Wire Wire Line
+	8800 2600 9050 2600
+Wire Wire Line
+	9050 2400 9050 2600
+Connection ~ 9050 2600
+Wire Wire Line
+	9050 2600 9650 2600
+$Comp
+L LM2596S-5.0:LM2596S-5.0 VR2
+U 1 1 61FE2A65
+P 8250 1250
+F 0 "VR2" H 8250 1817 50  0000 C CNN
+F 1 "LM2596S-5.0" H 8250 1726 50  0000 C CNN
+F 2 "footprints:KTT0005B" H 8250 1250 50  0001 L BNN
+F 3 "" H 8250 1250 50  0001 L BNN
+F 4 "E" H 8250 1250 50  0001 L BNN "PARTREV"
+F 5 "4.83 mm" H 8250 1250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "102658" H 8250 1250 50  0001 L BNN "SNAPEDA_PACKAGE_ID"
+F 7 "Texas Instruments" H 8250 1250 50  0001 L BNN "MANUFACTURER"
+F 8 "IPC-7351B" H 8250 1250 50  0001 L BNN "STANDARD"
+	1    8250 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1650 8950 1750
+Wire Wire Line
+	8950 1650 8950 1550
+Connection ~ 8950 1650
+$Comp
+L Regulator_Linear:LM7805_TO220 U1
+U 1 1 61FF8B77
+P 9050 5050
+F 0 "U1" H 9050 5292 50  0000 C CNN
+F 1 "LM7805_TO220" H 9050 5201 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9050 5275 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 9050 5000 50  0001 C CNN
+	1    9050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q3
+U 1 1 61F479C1
+P 2650 6650
+F 0 "Q3" H 2841 6696 50  0000 L CNN
+F 1 "2N3904" H 2841 6605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2850 6575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 2650 6650 50  0001 L CNN
+	1    2650 6650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q4
+U 1 1 61F483A1
+P 3500 6000
+F 0 "Q4" V 3735 6000 50  0000 C CNN
+F 1 "2N3904" V 3826 6000 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3700 5925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3500 6000 50  0001 L CNN
+	1    3500 6000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 1N4735A:1N4735A Z1
+U 1 1 61F49C7C
+P 2550 7000
+F 0 "Z1" V 2804 7130 50  0000 L CNN
+F 1 "1N4735A" V 2895 7130 50  0000 L CNN
+F 2 "footprints:DIOAD1413W86L463D238" H 2950 7150 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/1N4736AT-D.PDF" H 2950 7050 50  0001 L CNN
+F 4 "ON SEMICONDUCTOR - 1N4735A - ZENER DIODE, 1W, 6.2V, DO-41-2" H 2950 6950 50  0001 L CNN "Description"
+F 5 "" H 2950 6850 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 2950 6750 50  0001 L CNN "Manufacturer_Name"
+F 7 "1N4735A" H 2950 6650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "512-1N4735A" H 2950 6550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/1N4735A?qs=SSucg2PyLi5YUnIaMJAttg%3D%3D" H 2950 6450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1N4735A" H 2950 6350 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/1n4735a/on-semiconductor" H 2950 6250 50  0001 L CNN "Arrow Price/Stock"
+	1    2550 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L BD681:BD681 IC1
+U 1 1 61F4C466
+P 4300 5450
+F 0 "IC1" H 4928 5396 50  0000 L CNN
+F 1 "BD681" H 4928 5305 50  0000 L CNN
+F 2 "footprints:TO254P290X760X1320-3P" H 4950 5550 50  0001 L CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000939.pdf" H 4950 5450 50  0001 L CNN
+F 4 "BD681, Darlington Transistor, NPN 4 A 100 V HFE:750, 3-Pin, SOT-32" H 4950 5350 50  0001 L CNN "Description"
+F 5 "2.9" H 4950 5250 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 4950 5150 50  0001 L CNN "Manufacturer_Name"
+F 7 "BD681" H 4950 5050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-BD681" H 4950 4950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/BD681?qs=JV7lzlMm3yKO8HUgExd87Q%3D%3D" H 4950 4850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "BD681" H 4950 4750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/bd681/stmicroelectronics?region=nac" H 4950 4650 50  0001 L CNN "Arrow Price/Stock"
+	1    4300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6450 2550 6100
+Wire Wire Line
+	2550 6100 2700 6100
+Wire Wire Line
+	2550 6850 2550 7000
+$Comp
+L GWCR0603-10KFT5:GWCR0603-10KFT5 R4
+U 1 1 61F57507
+P 2550 5400
+F 0 "R4" V 2854 5488 50  0000 L CNN
+F 1 "GWCR0603-10KFT5" V 2945 5488 50  0000 L CNN
+F 2 "footprints:RESC1608X55N" H 3100 5450 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/GWCR0603-10KFT5.pdf" H 3100 5350 50  0001 L CNN
+F 4 "TT ELECTRONICS / WELWYN - GWCR0603-10KFT5 - SMD Chip Resistor, 0603 [1608 Metric], 10 kohm, GWCR Series, 75 V, Thick Film, 100 mW" H 3100 5250 50  0001 L CNN "Description"
+F 5 "0.55" H 3100 5150 50  0001 L CNN "Height"
+F 6 "TT ELECTRONICS / WELWYN" H 3100 5050 50  0001 L CNN "Manufacturer_Name"
+F 7 "GWCR0603-10KFT5" H 3100 4950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3100 4850 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3100 4750 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3100 4650 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3100 4550 50  0001 L CNN "Arrow Price/Stock"
+	1    2550 5400
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 6100
+$Comp
+L GWCR0603-10KFT5:GWCR0603-10KFT5 R6
+U 1 1 61F58CF7
+P 3300 6650
+F 0 "R6" V 3604 6738 50  0000 L CNN
+F 1 "GWCR0603-10KFT5" V 3695 6738 50  0000 L CNN
+F 2 "footprints:RESC1608X55N" H 3850 6700 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/GWCR0603-10KFT5.pdf" H 3850 6600 50  0001 L CNN
+F 4 "TT ELECTRONICS / WELWYN - GWCR0603-10KFT5 - SMD Chip Resistor, 0603 [1608 Metric], 10 kohm, GWCR Series, 75 V, Thick Film, 100 mW" H 3850 6500 50  0001 L CNN "Description"
+F 5 "0.55" H 3850 6400 50  0001 L CNN "Height"
+F 6 "TT ELECTRONICS / WELWYN" H 3850 6300 50  0001 L CNN "Manufacturer_Name"
+F 7 "GWCR0603-10KFT5" H 3850 6200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3850 6100 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3850 6000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3850 5900 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3850 5800 50  0001 L CNN "Arrow Price/Stock"
+	1    3300 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L GWCR0603-10KFT5:GWCR0603-10KFT5 R8
+U 1 1 61F5B261
+P 3500 5800
+F 0 "R8" H 3850 6025 50  0000 C CNN
+F 1 "GWCR0603-10KFT5" H 3850 5934 50  0000 C CNN
+F 2 "footprints:RESC1608X55N" H 4050 5850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/GWCR0603-10KFT5.pdf" H 4050 5750 50  0001 L CNN
+F 4 "TT ELECTRONICS / WELWYN - GWCR0603-10KFT5 - SMD Chip Resistor, 0603 [1608 Metric], 10 kohm, GWCR Series, 75 V, Thick Film, 100 mW" H 4050 5650 50  0001 L CNN "Description"
+F 5 "0.55" H 4050 5550 50  0001 L CNN "Height"
+F 6 "TT ELECTRONICS / WELWYN" H 4050 5450 50  0001 L CNN "Manufacturer_Name"
+F 7 "GWCR0603-10KFT5" H 4050 5350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 4050 5250 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 4050 5150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 4050 5050 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 4050 4950 50  0001 L CNN "Arrow Price/Stock"
+	1    3500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TUW15J47RE:TUW15J47RE R9
+U 1 1 61F5D47E
+P 4350 5800
+F 0 "R9" V 4654 5888 50  0000 L CNN
+F 1 "TUW15J47RE" V 4745 5888 50  0000 L CNN
+F 2 "footprints:TUW15J27RE" H 4900 5850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TUW15J47RE.pdf" H 4900 5750 50  0001 L CNN
+F 4 "Wirewound Resistors - Through Hole 15watt 47ohm 5% Axial" H 4900 5650 50  0001 L CNN "Description"
+F 5 "12.5" H 4900 5550 50  0001 L CNN "Height"
+F 6 "Ohmite" H 4900 5450 50  0001 L CNN "Manufacturer_Name"
+F 7 "TUW15J47RE" H 4900 5350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "588-TUW15J47RE" H 4900 5250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=588-TUW15J47RE" H 4900 5150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 4900 5050 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 4900 4950 50  0001 L CNN "Arrow Price/Stock"
+	1    4350 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 6100 3900 6100
+Wire Wire Line
+	3900 6100 3900 6500
+Wire Wire Line
+	3900 6500 4350 6500
+Wire Wire Line
+	4350 5800 4300 5800
+Wire Wire Line
+	4300 5650 4300 5800
+Connection ~ 4300 5800
+Wire Wire Line
+	4300 5800 4200 5800
+Wire Wire Line
+	4300 5450 2700 5450
+Wire Wire Line
+	2700 5450 2700 6100
+Connection ~ 2700 6100
+Wire Wire Line
+	2700 6100 3300 6100
+Wire Wire Line
+	3300 6650 2850 6650
+Wire Wire Line
+	3300 7650 2900 7650
+Wire Wire Line
+	2550 7650 2550 7600
+Wire Wire Line
+	3300 7350 3300 7650
+$Comp
+L Device:R R7
+U 1 1 61F79D4E
+P 3450 6650
+F 0 "R7" V 3243 6650 50  0000 C CNN
+F 1 "27k" V 3334 6650 50  0000 C CNN
+F 2 "footprints:RESC1608X55N" V 3380 6650 50  0001 C CNN
+F 3 "~" H 3450 6650 50  0001 C CNN
+	1    3450 6650
+	0    1    1    0   
+$EndComp
+Connection ~ 3300 6650
+$Comp
+L power:GND #PWR0112
+U 1 1 61F7ACAD
+P 2900 7650
+F 0 "#PWR0112" H 2900 7400 50  0001 C CNN
+F 1 "GND" H 2905 7477 50  0000 C CNN
+F 2 "" H 2900 7650 50  0001 C CNN
+F 3 "" H 2900 7650 50  0001 C CNN
+	1    2900 7650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 7650
+Wire Wire Line
+	2900 7650 2550 7650
+$Comp
+L power:GND #PWR0113
+U 1 1 61F7B760
+P 2800 5800
+F 0 "#PWR0113" H 2800 5550 50  0001 C CNN
+F 1 "GND" H 2805 5627 50  0000 C CNN
+F 2 "" H 2800 5800 50  0001 C CNN
+F 3 "" H 2800 5800 50  0001 C CNN
+	1    2800 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6550 4350 6500
+Connection ~ 4350 6500
+$Comp
+L Connector:Conn_01x02_Male J60vreg_lin1
+U 1 1 61F8250C
+P 2000 5500
+F 0 "J60vreg_lin1" H 1972 5382 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 1972 5473 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2000 5500 50  0001 C CNN
+F 3 "~" H 2000 5500 50  0001 C CNN
+	1    2000 5500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2200 5400 2550 5400
+Connection ~ 2550 5400
+$Comp
+L power:GND #PWR0114
+U 1 1 61F876CB
+P 2200 5500
+F 0 "#PWR0114" H 2200 5250 50  0001 C CNN
+F 1 "GND" H 2205 5327 50  0000 C CNN
+F 2 "" H 2200 5500 50  0001 C CNN
+F 3 "" H 2200 5500 50  0001 C CNN
+	1    2200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6650 4350 6650
+Wire Wire Line
+	4350 6650 4350 6550
+Connection ~ 4350 6550
+Wire Wire Line
+	7650 5650 7650 5050
+Wire Wire Line
+	7650 5650 5400 5650
+Wire Wire Line
+	5400 5650 5400 6550
+Wire Wire Line
+	4350 6550 5400 6550
+$Comp
+L GWCR0603-10KFT5:GWCR0603-10KFT5 R5
+U 1 1 61FDCC01
+P 2800 5800
+F 0 "R5" H 3150 6025 50  0000 C CNN
+F 1 "GWCR0603-10KFT5" H 3150 5934 50  0000 C CNN
+F 2 "footprints:RESC1608X55N" H 3350 5850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/GWCR0603-10KFT5.pdf" H 3350 5750 50  0001 L CNN
+F 4 "TT ELECTRONICS / WELWYN - GWCR0603-10KFT5 - SMD Chip Resistor, 0603 [1608 Metric], 10 kohm, GWCR Series, 75 V, Thick Film, 100 mW" H 3350 5650 50  0001 L CNN "Description"
+F 5 "0.55" H 3350 5550 50  0001 L CNN "Height"
+F 6 "TT ELECTRONICS / WELWYN" H 3350 5450 50  0001 L CNN "Manufacturer_Name"
+F 7 "GWCR0603-10KFT5" H 3350 5350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3350 5250 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3350 5150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3350 5050 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3350 4950 50  0001 L CNN "Arrow Price/Stock"
+	1    2800 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 5800
+Wire Wire Line
+	4750 5400 4750 5550
+Wire Wire Line
+	4750 5550 4300 5550
+Wire Wire Line
+	2550 5400 4750 5400
+$EndSCHEMATC

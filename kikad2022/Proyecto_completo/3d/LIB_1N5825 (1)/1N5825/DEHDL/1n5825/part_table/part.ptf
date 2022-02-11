@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1N5825'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Microsemi Corporation", "1N5825" (!) = "", "DIOAD4191W142L1143D762", "Diodes, Axial Diameter Horizontal Mounting", "494-1N5825", "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/1N5825/?qs=6jAvgNDGUA9CL%2FdhCw1Tdg%3D%3D", "1N5825", "https://www.arrow.com/en/products/1n5825/microsemi", "Schottky Diodes & Rectifiers Schottky Rectifier, 5A, 350v, 1470pF", "http://www.mouser.com/ds/2/523/1n5823-25-908226.pdf"
+END_PART
+
+END.

@@ -1,0 +1,18 @@
+.SN74HC02D :1 ;Quadruple 2-Input Positive-NOR Gates
+SOIC127P600X175-14N
+*STM IC
+*NGS
+*PLB 1="1Y" 2="1A" 3="1B" 4="2Y" 5="2A" 6="2B" 7="GND" 8="3A" 9="3B" 10="3Y" 11="4A" 12="4B" 13="4Y" 14="VCC"
+*MXP 14
+*DFN SN74HC02D
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (SN74HC02D)
+~!Mouser Part Number (595-SN74HC02D)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74HC02D?qs=st7IWvlL5%2FhExkqByMBqzA%3D%3D)
+~!Arrow Part Number (SN74HC02D)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/sn74hc02d/texas-instruments)
+~!Link Datasheet (http://www.ti.com/lit/ds/symlink/sn74hc02.pdf)
+~!Height (1.75mm)
+~!3D_Model (SN74HC02D)
+SN74HC02D
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 

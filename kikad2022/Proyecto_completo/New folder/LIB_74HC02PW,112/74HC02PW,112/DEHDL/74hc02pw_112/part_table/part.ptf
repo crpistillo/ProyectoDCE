@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '74HC02PW_112'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nexperia", "74HC02PW,112" (!) = "", "SOP65P640X110-14N", "Small Outline Packages", "771-HC02PW112", "https://www.mouser.com/Search/Refine.aspx?Keyword=771-HC02PW112", "74HC02PW,112", "https://www.arrow.com/en/products/74hc02pw112/nexperia", "74HC(T)02 - Quad 2-input NOR gate@en-us", "https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf", "1.1 mm"
+END_PART
+
+END.

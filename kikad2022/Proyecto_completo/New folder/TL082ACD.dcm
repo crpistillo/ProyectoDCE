@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TL082ACD
+D TL082ACDG4, Dual Operational Amplifier 3MHz, 8-Pin SOIC
+K
+F http://www.ti.com/lit/ds/symlink/tl082a.pdf
+$ENDCMP
+#
+#End Doc Library

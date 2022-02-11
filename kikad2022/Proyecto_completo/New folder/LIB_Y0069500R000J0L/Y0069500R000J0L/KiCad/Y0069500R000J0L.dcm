@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Y0069500R000J0L
+D Trimmer Resistors - Through Hole 500ohms 1/4w 9.53mm sq seal
+K
+F http://www.vishaypg.com/docs/63054/Accutrim_1260_RJ24.pdf
+$ENDCMP
+#
+#End Doc Library

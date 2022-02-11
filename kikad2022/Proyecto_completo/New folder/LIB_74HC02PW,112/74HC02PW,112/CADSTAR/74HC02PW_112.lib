@@ -1,0 +1,18 @@
+.74HC02PW_112 :1 ;74HC(T)02 - Quad 2-input NOR gate@en-us
+SOP65P640X110-14N
+*STM IC
+*NGS
+*PLB 1="1Y" 2="1A" 3="1B" 4="2Y" 5="2A" 6="2B" 7="GND" 8="3A" 9="3B" 10="3Y" 11="4A" 12="4B" 13="4Y" 14="VCC"
+*MXP 14
+*DFN 74HC02PW_112
+~!Manufacturer_Name (Nexperia)
+~!Manufacturer_Part_Number (74HC02PW,112)
+~!Mouser Part Number (771-HC02PW112)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=771-HC02PW112)
+~!Arrow Part Number (74HC02PW,112)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/74hc02pw112/nexperia)
+~!Link Datasheet (https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf)
+~!Height (1.1mm)
+~!3D_Model (74HC02PW,112)
+"74HC02PW_112"
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 

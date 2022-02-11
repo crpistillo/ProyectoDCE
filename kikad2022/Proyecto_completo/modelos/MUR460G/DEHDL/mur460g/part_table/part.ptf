@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MUR460G'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "ON Semiconductor", "MUR460G" (!) = "", "DIOAD2860W130L840D505", "Diodes, Axial Diameter Horizontal Mounting", "MUR460G", "https://www.arrow.com/en/products/mur460g/on-semiconductor", "863-MUR460G", "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MUR460G?qs=Gev%252BmEvV0iZtA9Av%2FtBXVg%3D%3D", "ON SEMICONDUCTOR - MUR460G - DIODE, ULTRA-FAST", "http://www.onsemi.com/pub/Collateral/MUR420-D.PDF"
+END_PART
+
+END.
