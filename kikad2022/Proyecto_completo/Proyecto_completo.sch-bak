@@ -39,10 +39,10 @@ Wire Wire Line
 Wire Wire Line
 	1900 4600 2200 4600
 $Comp
-L Connector:Screw_Terminal_01x02 +15V
+L Connector:Screw_Terminal_01x02 +15V1
 U 1 1 6201BB83
 P 1200 3200
-F 0 "+15V" H 1118 2875 50  0000 C CNN
+F 0 "+15V1" H 1118 2875 50  0000 C CNN
 F 1 "+15" H 1118 2966 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1200 3200 50  0001 C CNN
 F 3 "~" H 1200 3200 50  0001 C CNN
@@ -50,15 +50,15 @@ F 3 "~" H 1200 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 +5V
+L Connector:Screw_Terminal_01x02 +5V1
 U 1 1 6201CAE7
-P 900 4000
-F 0 "+5V" H 818 3675 50  0000 C CNN
-F 1 "+5" H 818 3766 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 900 4000 50  0001 C CNN
-F 3 "~" H 900 4000 50  0001 C CNN
-	1    900  4000
-	-1   0    0    1   
+P 900 3900
+F 0 "+5V1" H 818 3575 50  0000 C CNN
+F 1 "+5" H 818 3666 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 900 3900 50  0001 C CNN
+F 3 "~" H 900 3900 50  0001 C CNN
+	1    900  3900
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1100 4000 1100 4200
@@ -99,10 +99,10 @@ F 3 "" H 4200 4400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 -5V
+L Connector:Screw_Terminal_01x02 -5V1
 U 1 1 62033664
 P 6950 4900
-F 0 "-5V" H 7030 4892 50  0000 L CNN
+F 0 "-5V1" H 7030 4892 50  0000 L CNN
 F 1 "-5" H 7030 4801 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6950 4900 50  0001 C CNN
 F 3 "~" H 6950 4900 50  0001 C CNN
