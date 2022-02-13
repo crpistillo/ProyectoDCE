@@ -1,0 +1,12 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal 80 32 -80 -32
+TEXT -80 0 Left 2 IN
+TEXT 80 0 Right 2 OUT
+TEXT -96 -48 Left 2 Regulador10_5
+PIN -80 0 NONE 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 80 0 NONE 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 2
