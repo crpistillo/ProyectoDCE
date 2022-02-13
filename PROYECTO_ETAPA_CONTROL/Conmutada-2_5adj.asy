@@ -1,0 +1,12 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal 65 32 -65 -32
+TEXT -65 1 Left 2 IN
+TEXT 64 -1 Right 2 OUT
+TEXT -80 -48 Left 2 ConmutadoAdj
+PIN -64 0 NONE 8
+PINATTR PinName IN
+PINATTR SpiceOrder 1
+PIN 64 0 NONE 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 2
