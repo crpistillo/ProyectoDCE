@@ -1,0 +1,578 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C3
+U 1 1 61EF9606
+P 6950 4200
+F 0 "C3" H 7065 4246 50  0000 L CNN
+F 1 "470u" H 7065 4155 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 6988 4050 50  0001 C CNN
+F 3 "~" H 6950 4200 50  0001 C CNN
+	1    6950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 61EF9ACB
+P 7300 4000
+F 0 "C4" H 7415 4046 50  0000 L CNN
+F 1 "0.1u" H 7415 3955 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 7338 3850 50  0001 C CNN
+F 3 "~" H 7300 4000 50  0001 C CNN
+	1    7300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 61EFA3BE
+P 7550 4250
+F 0 "R14" V 7343 4250 50  0000 C CNN
+F 1 "47k" V 7434 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 4250 50  0001 C CNN
+F 3 "~" H 7550 4250 50  0001 C CNN
+	1    7550 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 61EFA953
+P 7850 4400
+F 0 "R15" H 7780 4354 50  0000 R CNN
+F 1 "47k" H 7780 4445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 4400 50  0001 C CNN
+F 3 "~" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5820 D3
+U 1 1 61EFB158
+P 8400 4100
+F 0 "D3" V 8354 4180 50  0000 L CNN
+F 1 "1N5820" V 8445 4180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 8400 3925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 8400 4100 50  0001 C CNN
+	1    8400 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 61EFBC68
+P 9150 4050
+F 0 "C7" H 9265 4096 50  0000 L CNN
+F 1 "220u" H 9265 4005 50  0000 L CNN
+F 2 "New folder:CAPAE1300X1400N" H 9188 3900 50  0001 C CNN
+F 3 "~" H 9150 4050 50  0001 C CNN
+	1    9150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 61EFCF1D
+P 8750 3800
+F 0 "L1" V 8940 3800 50  0000 C CNN
+F 1 "33u" V 8849 3800 50  0000 C CNN
+F 2 "Inductor_SMD:L_TDK_NLV32_3.2x2.5mm" H 8750 3800 50  0001 C CNN
+F 3 "~" H 8750 3800 50  0001 C CNN
+	1    8750 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N5400 D5
+U 1 1 61EFD6CE
+P 9550 4050
+F 0 "D5" V 9504 4130 50  0000 L CNN
+F 1 "1N5400" V 9595 4130 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 9550 3875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 9550 4050 50  0001 C CNN
+	1    9550 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L LM2596S-5.0:LM2596S-5.0 VR1
+U 1 1 61F00F49
+P 7750 3250
+F 0 "VR1" H 7750 3817 50  0000 C CNN
+F 1 "LM2596S-5.0" H 7750 3726 50  0000 C CNN
+F 2 "footprints:KTT0005B" H 7750 3250 50  0001 L BNN
+F 3 "" H 7750 3250 50  0001 L BNN
+F 4 "E" H 7750 3250 50  0001 L BNN "PARTREV"
+F 5 "4.83 mm" H 7750 3250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "102658" H 7750 3250 50  0001 L BNN "SNAPEDA_PACKAGE_ID"
+F 7 "Texas Instruments" H 7750 3250 50  0001 L BNN "MANUFACTURER"
+F 8 "IPC-7351B" H 7750 3250 50  0001 L BNN "STANDARD"
+	1    7750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3550 8450 3650
+Wire Wire Line
+	8450 2950 8500 2950
+Wire Wire Line
+	8550 2950 8550 3800
+Wire Wire Line
+	8550 3800 8600 3800
+Wire Wire Line
+	8550 3800 8400 3800
+Wire Wire Line
+	8400 3800 8400 3950
+Connection ~ 8550 3800
+Wire Wire Line
+	8900 3800 9150 3800
+Wire Wire Line
+	9550 3800 9550 3900
+Wire Wire Line
+	9150 3900 9150 3800
+Connection ~ 9150 3800
+Wire Wire Line
+	9150 3800 9550 3800
+Wire Wire Line
+	8450 3650 8450 3750
+Wire Wire Line
+	8450 3750 8300 3750
+Wire Wire Line
+	8300 3750 8300 4600
+Wire Wire Line
+	8400 4600 8400 4250
+Connection ~ 8450 3650
+Wire Wire Line
+	9150 4200 9150 4600
+Connection ~ 8400 4600
+Wire Wire Line
+	9550 4200 9550 4600
+Wire Wire Line
+	8400 4600 9150 4600
+Connection ~ 9150 4600
+Wire Wire Line
+	9150 4600 9550 4600
+Wire Wire Line
+	7050 3350 8500 3350
+Wire Wire Line
+	8500 3350 8500 2950
+Connection ~ 8500 2950
+Wire Wire Line
+	8500 2950 8550 2950
+Wire Wire Line
+	7050 3150 6950 3150
+Wire Wire Line
+	6950 3150 6950 3800
+Wire Wire Line
+	6950 3800 7800 3800
+Wire Wire Line
+	7800 3800 7800 4250
+Wire Wire Line
+	7800 4250 7850 4250
+Wire Wire Line
+	7700 4250 7800 4250
+Connection ~ 7800 4250
+Wire Wire Line
+	7850 4550 7850 4600
+Connection ~ 8300 4600
+Wire Wire Line
+	8300 4600 8400 4600
+Wire Wire Line
+	7400 4250 7300 4250
+Wire Wire Line
+	7300 4250 7300 4150
+Wire Wire Line
+	7300 3850 6950 3850
+Wire Wire Line
+	6950 4050 6950 3850
+Connection ~ 6950 3850
+Wire Wire Line
+	6950 3850 6850 3850
+Wire Wire Line
+	6950 4350 6950 4600
+Wire Wire Line
+	6950 4600 7850 4600
+Connection ~ 7850 4600
+Wire Wire Line
+	7850 4600 8300 4600
+Wire Wire Line
+	7050 2950 6850 2950
+Wire Wire Line
+	6850 2950 6850 3850
+Connection ~ 6850 3850
+Wire Wire Line
+	6850 3850 6700 3850
+$Comp
+L power:GND #PWR029
+U 1 1 61F4547A
+P 9900 3800
+F 0 "#PWR029" H 9900 3550 50  0001 C CNN
+F 1 "GND" H 9905 3627 50  0000 C CNN
+F 2 "" H 9900 3800 50  0001 C CNN
+F 3 "" H 9900 3800 50  0001 C CNN
+	1    9900 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 9550 3800
+Connection ~ 9550 4600
+$Comp
+L 1N5825:1N5825 D2
+U 1 1 61FA4A7E
+P 6700 3850
+F 0 "D2" H 7000 3583 50  0000 C CNN
+F 1 "1N5825" H 7000 3674 50  0000 C CNN
+F 2 "footprints:1N5824" H 7150 3850 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/523/1n5823-25-908226.pdf" H 7150 3750 50  0001 L CNN
+F 4 "Schottky Diodes & Rectifiers Schottky Rectifier, 5A, 350v, 1470pF" H 7150 3650 50  0001 L CNN "Description"
+F 5 "" H 7150 3550 50  0001 L CNN "Height"
+F 6 "Microsemi Corporation" H 7150 3450 50  0001 L CNN "Manufacturer_Name"
+F 7 "1N5825" H 7150 3350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "494-1N5825" H 7150 3250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/1N5825/?qs=6jAvgNDGUA9CL%2FdhCw1Tdg%3D%3D" H 7150 3150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1N5825" H 7150 3050 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/1n5825/microsemi" H 7150 2950 50  0001 L CNN "Arrow Price/Stock"
+	1    6700 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 61FCAAE1
+P 7400 1950
+F 0 "C5" H 7515 1996 50  0000 L CNN
+F 1 "680u" H 7515 1905 50  0000 L CNN
+F 2 "footprints:CAPC2012X100N" H 7438 1800 50  0001 C CNN
+F 3 "~" H 7400 1950 50  0001 C CNN
+	1    7400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 61FCAAF9
+P 9250 2000
+F 0 "C8" H 9365 2046 50  0000 L CNN
+F 1 "220u" H 9365 1955 50  0000 L CNN
+F 2 "New folder:CAPAE1300X1400N" H 9288 1850 50  0001 C CNN
+F 3 "~" H 9250 2000 50  0001 C CNN
+	1    9250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 61FCAAFF
+P 8850 1750
+F 0 "L2" V 9040 1750 50  0000 C CNN
+F 1 "33u" V 8949 1750 50  0000 C CNN
+F 2 "Inductor_SMD:L_TDK_NLV32_3.2x2.5mm" H 8850 1750 50  0001 C CNN
+F 3 "~" H 8850 1750 50  0001 C CNN
+	1    8850 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 900  8650 1750
+Wire Wire Line
+	8650 1750 8700 1750
+Wire Wire Line
+	9000 1750 9250 1750
+Wire Wire Line
+	9250 1850 9250 1750
+Connection ~ 9250 1750
+Wire Wire Line
+	8550 1700 8400 1700
+Wire Wire Line
+	9250 2150 9250 2550
+Wire Wire Line
+	7150 1100 7050 1100
+Connection ~ 8400 2550
+Wire Wire Line
+	7400 2200 7400 2100
+Wire Wire Line
+	7150 900  6950 900 
+Wire Wire Line
+	6950 900  6950 1800
+Connection ~ 6950 1800
+$Comp
+L power:GND #PWR024
+U 1 1 61FCED69
+P 7050 1100
+F 0 "#PWR024" H 7050 850 50  0001 C CNN
+F 1 "GND" H 7055 927 50  0000 C CNN
+F 2 "" H 7050 1100 50  0001 C CNN
+F 3 "" H 7050 1100 50  0001 C CNN
+	1    7050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 61FCF3B7
+P 8400 2550
+F 0 "#PWR026" H 8400 2300 50  0001 C CNN
+F 1 "GND" H 8405 2377 50  0000 C CNN
+F 2 "" H 8400 2550 50  0001 C CNN
+F 3 "" H 8400 2550 50  0001 C CNN
+	1    8400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2200 8400 2200
+Wire Wire Line
+	8400 1700 8400 2200
+Connection ~ 8400 2200
+Wire Wire Line
+	8400 2200 8400 2550
+Wire Wire Line
+	6950 1800 7400 1800
+Wire Wire Line
+	6000 1800 6950 1800
+Wire Wire Line
+	9250 1300 9250 1750
+Wire Wire Line
+	7150 1300 9250 1300
+Wire Wire Line
+	8550 900  8650 900 
+$Comp
+L 1N5824:1N5824 D4
+U 1 1 61FDD9C5
+P 8650 1750
+F 0 "D4" V 8904 1880 50  0000 L CNN
+F 1 "1N5824" V 8995 1880 50  0000 L CNN
+F 2 "footprints:1N5824" H 9100 1750 50  0001 L CNN
+F 3 "https://www.microsemi.com/document-portal/doc_download/5865-1n5823-25-datasheet" H 9100 1650 50  0001 L CNN
+F 4 "Schottky Diodes & Rectifiers Power Schottky" H 9100 1550 50  0001 L CNN "Description"
+F 5 "" H 9100 1450 50  0001 L CNN "Height"
+F 6 "Microsemi Corporation" H 9100 1350 50  0001 L CNN "Manufacturer_Name"
+F 7 "1N5824" H 9100 1250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "494-1N5824" H 9100 1150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/1N5824?qs=TXMzd3F6EyleEEWqakQxJw%3D%3D" H 9100 1050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1N5824" H 9100 950 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/1n5824/microsemi" H 9100 850 50  0001 L CNN "Arrow Price/Stock"
+	1    8650 1750
+	0    1    1    0   
+$EndComp
+Connection ~ 8650 1750
+Wire Wire Line
+	8400 2550 8650 2550
+Wire Wire Line
+	8650 2350 8650 2550
+Connection ~ 8650 2550
+Wire Wire Line
+	8650 2550 9250 2550
+$Comp
+L LM2596S-5.0:LM2596S-5.0 VR2
+U 1 1 61FE2A65
+P 7850 1200
+F 0 "VR2" H 7850 1767 50  0000 C CNN
+F 1 "LM2596S-5.0" H 7850 1676 50  0000 C CNN
+F 2 "footprints:KTT0005B" H 7850 1200 50  0001 L BNN
+F 3 "" H 7850 1200 50  0001 L BNN
+F 4 "E" H 7850 1200 50  0001 L BNN "PARTREV"
+F 5 "4.83 mm" H 7850 1200 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "102658" H 7850 1200 50  0001 L BNN "SNAPEDA_PACKAGE_ID"
+F 7 "Texas Instruments" H 7850 1200 50  0001 L BNN "MANUFACTURER"
+F 8 "IPC-7351B" H 7850 1200 50  0001 L BNN "STANDARD"
+	1    7850 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1600 8550 1700
+Wire Wire Line
+	8550 1600 8550 1500
+Connection ~ 8550 1600
+Wire Wire Line
+	3000 2950 3000 3250
+Text HLabel 3000 3250 2    50   Input ~ 0
+V_IN_12-60V
+Wire Wire Line
+	9550 3800 9900 3800
+Text HLabel 9900 3800 0    50   Input ~ 0
+GND
+Text HLabel 9750 1750 3    50   Input ~ 0
+V+5
+Text HLabel 3000 3350 2    50   Input ~ 0
+GND_IN
+$Comp
+L power:GND #PWR0101
+U 1 1 61FAC574
+P 3000 3350
+F 0 "#PWR0101" H 3000 3100 50  0001 C CNN
+F 1 "GND" H 3005 3177 50  0000 C CNN
+F 2 "" H 3000 3350 50  0001 C CNN
+F 3 "" H 3000 3350 50  0001 C CNN
+	1    3000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1800 6000 2500
+Wire Wire Line
+	6100 3850 6000 3850
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61FE2967
+P 2800 3250
+F 0 "J1" H 2718 2925 50  0000 C CNN
+F 1 "60_12" H 2718 3016 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 2800 3250 50  0001 C CNN
+F 3 "~" H 2800 3250 50  0001 C CNN
+	1    2800 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 61FEA28D
+P 10200 4500
+F 0 "J4" H 10280 4492 50  0000 L CNN
+F 1 "5-" H 10280 4401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 10200 4500 50  0001 C CNN
+F 3 "~" H 10200 4500 50  0001 C CNN
+	1    10200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 61FEB4BD
+P 6900 2400
+F 0 "J3" H 6980 2392 50  0000 L CNN
+F 1 "10.5+" H 6980 2301 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6900 2400 50  0001 C CNN
+F 3 "~" H 6900 2400 50  0001 C CNN
+	1    6900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61FEDFE6
+P 6700 2400
+F 0 "#PWR0102" H 6700 2150 50  0001 C CNN
+F 1 "GND" H 6705 2227 50  0000 C CNN
+F 2 "" H 6700 2400 50  0001 C CNN
+F 3 "" H 6700 2400 50  0001 C CNN
+	1    6700 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61FEE7B2
+P 10000 4500
+F 0 "#PWR0103" H 10000 4250 50  0001 C CNN
+F 1 "GND" H 10005 4327 50  0000 C CNN
+F 2 "" H 10000 4500 50  0001 C CNN
+F 3 "" H 10000 4500 50  0001 C CNN
+	1    10000 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 4600 10000 4600
+Wire Wire Line
+	6000 2500 6700 2500
+$Comp
+L Device:R R?
+U 1 1 620A84D6
+P 3850 3100
+F 0 "R?" H 3780 3054 50  0000 R CNN
+F 1 "1k" H 3780 3145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 3100 50  0001 C CNN
+F 3 "~" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L 2N2222:2N2222 Q?
+U 1 1 620A8D2F
+P 4600 3650
+F 0 "Q?" V 5275 3650 50  0000 C CNN
+F 1 "2N2222" V 5184 3650 50  0000 C CNN
+F 2 "2N2222" H 5150 3500 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-14/DSA-265357.pdf" H 5150 3400 50  0001 L CNN
+F 4 "NPN Silicon Planar Transistor" H 5150 3300 50  0001 L CNN "Description"
+F 5 "5.2" H 5150 3200 50  0001 L CNN "Height"
+F 6 "Infineon" H 5150 3100 50  0001 L CNN "Manufacturer_Name"
+F 7 "2N2222" H 5150 3000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 5150 2900 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 5150 2800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5150 2700 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 5150 2600 50  0001 L CNN "Arrow Price/Stock"
+	1    4600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:TIP41C Q?
+U 1 1 620AAA36
+P 5150 3100
+F 0 "Q?" V 5478 3100 50  0000 C CNN
+F 1 "TIP41C" V 5387 3100 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5400 3025 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 5150 3100 50  0001 L CNN
+	1    5150 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 2950 3000 2950
+Wire Wire Line
+	3850 3250 3850 3650
+Wire Wire Line
+	3850 3650 4600 3650
+Wire Wire Line
+	4900 3250 5150 3250
+Wire Wire Line
+	5150 3250 5150 3300
+Wire Wire Line
+	4950 3000 4300 3000
+Wire Wire Line
+	4000 3000 4000 2950
+Wire Wire Line
+	4000 2950 3850 2950
+Connection ~ 3850 2950
+Wire Wire Line
+	4300 3250 4300 3000
+Connection ~ 4300 3000
+Wire Wire Line
+	4300 3000 4000 3000
+$Comp
+L 1N5825:1N5825 D?
+U 1 1 620B592F
+P 5100 3700
+F 0 "D?" H 5400 3433 50  0000 C CNN
+F 1 "1N5825" H 5400 3524 50  0000 C CNN
+F 2 "footprints:1N5824" H 5550 3700 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/523/1n5823-25-908226.pdf" H 5550 3600 50  0001 L CNN
+F 4 "Schottky Diodes & Rectifiers Schottky Rectifier, 5A, 350v, 1470pF" H 5550 3500 50  0001 L CNN "Description"
+F 5 "" H 5550 3400 50  0001 L CNN "Height"
+F 6 "Microsemi Corporation" H 5550 3300 50  0001 L CNN "Manufacturer_Name"
+F 7 "1N5825" H 5550 3200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "494-1N5825" H 5550 3100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/1N5825/?qs=6jAvgNDGUA9CL%2FdhCw1Tdg%3D%3D" H 5550 3000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1N5825" H 5550 2900 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/1n5825/microsemi" H 5550 2800 50  0001 L CNN "Arrow Price/Stock"
+	1    5100 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620B6B6D
+P 5100 4300
+F 0 "#PWR?" H 5100 4050 50  0001 C CNN
+F 1 "GND" H 5105 4127 50  0000 C CNN
+F 2 "" H 5100 4300 50  0001 C CNN
+F 3 "" H 5100 4300 50  0001 C CNN
+	1    5100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3700 4600 3700
+Wire Wire Line
+	4600 3700 4600 3650
+Connection ~ 4600 3650
+Wire Wire Line
+	5350 3000 6000 3000
+Connection ~ 6000 3000
+Wire Wire Line
+	6000 3000 6000 3850
+Connection ~ 6000 2500
+Wire Wire Line
+	6000 2500 6000 3000
+$EndSCHEMATC

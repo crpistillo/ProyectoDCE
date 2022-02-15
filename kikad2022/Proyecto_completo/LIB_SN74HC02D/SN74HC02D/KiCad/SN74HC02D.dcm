@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SN74HC02D
-D Quadruple 2-Input Positive-NOR Gates
-K
-F http://www.ti.com/lit/ds/symlink/sn74hc02.pdf
-$ENDCMP
-#
-#End Doc Library

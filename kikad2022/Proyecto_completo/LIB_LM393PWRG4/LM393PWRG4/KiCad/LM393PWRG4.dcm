@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP LM393PWRG4
-D Dual differential comparator, commercial grade
-K
-F http://www.ti.com/lit/gpn/LM393
-$ENDCMP
-#
-#End Doc Library

@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP NSPW500BS
-D 4 V White LED Through Hole, Nichia NSPW500BS
-K
-F https://www.digchip.com/datasheets/parts/datasheet/1014/NSPW500BS-pdf.php
-$ENDCMP
-#
-#End Doc Library

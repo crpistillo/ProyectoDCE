@@ -1,0 +1,932 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:2N3906 Q3
+U 1 1 61FADE4A
+P 3850 3450
+F 0 "Q3" H 4040 3496 50  0000 L CNN
+F 1 "2N3906" H 4040 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4050 3375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 3850 3450 50  0001 L CNN
+	1    3850 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q1
+U 1 1 61FADE50
+P 3450 3450
+F 0 "Q1" H 3640 3496 50  0000 L CNN
+F 1 "2N3906" H 3640 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 3375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 3450 3450 50  0001 L CNN
+	1    3450 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q4
+U 1 1 61FADE56
+P 4050 5550
+F 0 "Q4" H 4240 5596 50  0000 L CNN
+F 1 "2N3904" H 4240 5505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 5475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4050 5550 50  0001 L CNN
+	1    4050 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q5
+U 1 1 61FADE5C
+P 4650 5550
+F 0 "Q5" H 4840 5596 50  0000 L CNN
+F 1 "2N3904" H 4840 5505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 5475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4650 5550 50  0001 L CNN
+	1    4650 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3450 3650 3850
+Wire Wire Line
+	3650 3850 3350 3850
+Wire Wire Line
+	3350 3650 3350 3850
+Connection ~ 3650 3450
+Wire Wire Line
+	3950 3650 3950 3700
+Wire Wire Line
+	4450 5550 4250 5550
+$Comp
+L Device:R R1
+U 1 1 61FADE68
+P 5100 5350
+F 0 "R1" V 5307 5350 50  0000 C CNN
+F 1 "10K" V 5216 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 5350 50  0001 C CNN
+F 3 "~" H 5100 5350 50  0001 C CNN
+	1    5100 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 5350 4900 5350
+Wire Wire Line
+	4450 5550 4450 5200
+Wire Wire Line
+	4450 5200 4900 5200
+Wire Wire Line
+	4900 5200 4900 5350
+Connection ~ 4450 5550
+Connection ~ 4900 5350
+Wire Wire Line
+	4900 5350 4750 5350
+$Comp
+L power:GND #PWR06
+U 1 1 61FADE75
+P 3950 5750
+F 0 "#PWR06" H 3950 5500 50  0001 C CNN
+F 1 "GND" H 3955 5577 50  0000 C CNN
+F 2 "" H 3950 5750 50  0001 C CNN
+F 3 "" H 3950 5750 50  0001 C CNN
+	1    3950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 61FADE7B
+P 4750 5750
+F 0 "#PWR09" H 4750 5500 50  0001 C CNN
+F 1 "GND" H 4755 5577 50  0000 C CNN
+F 2 "" H 4750 5750 50  0001 C CNN
+F 3 "" H 4750 5750 50  0001 C CNN
+	1    4750 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3250 3350 3150
+Wire Wire Line
+	3350 3150 3650 3150
+Wire Wire Line
+	3950 3150 3950 3250
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 61FADE84
+P 3450 5550
+F 0 "Q2" H 3640 5596 50  0000 L CNN
+F 1 "2N3904" H 3640 5505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 5475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3450 5550 50  0001 L CNN
+	1    3450 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61FADE8A
+P 3350 5750
+F 0 "#PWR03" H 3350 5500 50  0001 C CNN
+F 1 "GND" H 3355 5577 50  0000 C CNN
+F 2 "" H 3350 5750 50  0001 C CNN
+F 3 "" H 3350 5750 50  0001 C CNN
+	1    3350 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5550 3650 6050
+Wire Wire Line
+	3650 6050 4250 6050
+Wire Wire Line
+	4250 6050 4250 5550
+Connection ~ 4250 5550
+Wire Wire Line
+	3350 3850 3350 5350
+Connection ~ 3350 3850
+Connection ~ 3950 3700
+$Comp
+L Device:R R3
+U 1 1 61FADEA7
+P 6450 3350
+F 0 "R3" H 6520 3396 50  0000 L CNN
+F 1 "3K" H 6520 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6380 3350 50  0001 C CNN
+F 3 "~" H 6450 3350 50  0001 C CNN
+	1    6450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q7
+U 1 1 61FADEC1
+P 8100 4050
+F 0 "Q7" H 8304 4096 50  0000 L CNN
+F 1 "2N7000" H 8304 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8300 3975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 8100 4050 50  0001 L CNN
+	1    8100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q12
+U 1 1 61FADEC7
+P 9550 4050
+F 0 "Q12" H 9754 4096 50  0000 L CNN
+F 1 "2N7000" H 9754 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9750 3975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 9550 4050 50  0001 L CNN
+	1    9550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 61FADECD
+P 8200 4250
+F 0 "#PWR014" H 8200 4000 50  0001 C CNN
+F 1 "GND" H 8205 4077 50  0000 C CNN
+F 2 "" H 8200 4250 50  0001 C CNN
+F 3 "" H 8200 4250 50  0001 C CNN
+	1    8200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 61FADED3
+P 9650 4250
+F 0 "#PWR018" H 9650 4000 50  0001 C CNN
+F 1 "GND" H 9655 4077 50  0000 C CNN
+F 2 "" H 9650 4250 50  0001 C CNN
+F 3 "" H 9650 4250 50  0001 C CNN
+	1    9650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q9
+U 1 1 61FADEDF
+P 8300 3200
+F 0 "Q9" H 8490 3246 50  0000 L CNN
+F 1 "2N3906" H 8490 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8500 3125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 8300 3200 50  0001 L CNN
+	1    8300 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q8
+U 1 1 61FADEE5
+P 8300 2400
+F 0 "Q8" H 8490 2446 50  0000 L CNN
+F 1 "2N3906" H 8490 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8500 2325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 8300 2400 50  0001 L CNN
+	1    8300 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61FADEEB
+P 8200 1950
+F 0 "R5" H 8130 1904 50  0000 R CNN
+F 1 "100" H 8130 1995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8130 1950 50  0001 C CNN
+F 3 "~" H 8200 1950 50  0001 C CNN
+	1    8200 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61FADEF1
+P 6950 3100
+F 0 "R4" H 6880 3054 50  0000 R CNN
+F 1 "10k" H 6880 3145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6880 3100 50  0001 C CNN
+F 3 "~" H 6950 3100 50  0001 C CNN
+	1    6950 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q6
+U 1 1 61FADEF7
+P 7050 2700
+F 0 "Q6" H 7240 2746 50  0000 L CNN
+F 1 "2N3904" H 7240 2655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7250 2625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7050 2700 50  0001 L CNN
+	1    7050 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 61FADEFD
+P 6950 3250
+F 0 "#PWR012" H 6950 3000 50  0001 C CNN
+F 1 "GND" H 6955 3077 50  0000 C CNN
+F 2 "" H 6950 3250 50  0001 C CNN
+F 3 "" H 6950 3250 50  0001 C CNN
+	1    6950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2950 6950 2900
+Wire Wire Line
+	6950 2500 6950 2450
+Wire Wire Line
+	6950 2450 7400 2450
+Wire Wire Line
+	7400 2450 7400 2700
+Wire Wire Line
+	7400 2700 7250 2700
+Wire Wire Line
+	7400 2700 7650 2700
+Wire Wire Line
+	8700 2700 8700 3200
+Wire Wire Line
+	8700 3200 8500 3200
+Connection ~ 7400 2700
+Wire Wire Line
+	8200 3000 8200 2650
+Wire Wire Line
+	8200 2200 8200 2150
+Wire Wire Line
+	8500 2400 8500 2650
+Wire Wire Line
+	8500 2650 8200 2650
+Connection ~ 8200 2650
+Wire Wire Line
+	8200 2650 8200 2600
+Wire Wire Line
+	8700 3200 9350 3200
+Connection ~ 8700 3200
+Wire Wire Line
+	7900 4050 7800 4050
+Wire Wire Line
+	9350 4700 9350 4050
+Wire Wire Line
+	9650 3000 9650 2700
+Connection ~ 8500 2400
+$Comp
+L Device:R R6
+U 1 1 61FADF20
+P 9650 2000
+F 0 "R6" H 9580 1954 50  0000 R CNN
+F 1 "100" H 9580 2045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 2000 50  0001 C CNN
+F 3 "~" H 9650 2000 50  0001 C CNN
+	1    9650 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61FADF26
+P 10500 2950
+F 0 "C1" H 10615 2996 50  0000 L CNN
+F 1 "200n" H 10615 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 10538 2800 50  0001 C CNN
+F 3 "~" H 10500 2950 50  0001 C CNN
+	1    10500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 2800 10500 2700
+Wire Wire Line
+	10500 2700 9650 2700
+Connection ~ 9650 2700
+$Comp
+L power:GND #PWR019
+U 1 1 61FADF2F
+P 10500 3100
+F 0 "#PWR019" H 10500 2850 50  0001 C CNN
+F 1 "GND" H 10505 2927 50  0000 C CNN
+F 2 "" H 10500 3100 50  0001 C CNN
+F 3 "" H 10500 3100 50  0001 C CNN
+	1    10500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 1650 9650 1850
+Wire Wire Line
+	8200 1800 8200 1650
+Connection ~ 8200 1650
+Wire Wire Line
+	8200 1650 9650 1650
+Wire Wire Line
+	10500 2700 10500 1000
+Wire Wire Line
+	10500 1000 4300 1000
+Wire Wire Line
+	4300 1000 4300 1750
+Connection ~ 10500 2700
+Wire Wire Line
+	5850 3050 5850 3150
+$Comp
+L power:+15V #PWR013
+U 1 1 61FADF40
+P 8200 1650
+F 0 "#PWR013" H 8200 1500 50  0001 C CNN
+F 1 "+15V" H 8215 1823 50  0000 C CNN
+F 2 "" H 8200 1650 50  0001 C CNN
+F 3 "" H 8200 1650 50  0001 C CNN
+	1    8200 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 4800
+Wire Wire Line
+	3950 4800 3950 5350
+Connection ~ 4300 3750
+Wire Wire Line
+	4150 3550 4150 3700
+Wire Wire Line
+	4150 3700 3950 3700
+$Comp
+L power:+15V #PWR010
+U 1 1 61FADF54
+P 5250 5350
+F 0 "#PWR010" H 5250 5200 50  0001 C CNN
+F 1 "+15V" H 5265 5523 50  0000 C CNN
+F 2 "" H 5250 5350 50  0001 C CNN
+F 3 "" H 5250 5350 50  0001 C CNN
+	1    5250 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3050 5850 3050
+Wire Wire Line
+	8200 1650 7100 1650
+Wire Wire Line
+	9650 2700 9650 2600
+Wire Wire Line
+	9350 2400 8500 2400
+$Comp
+L Transistor_BJT:2N3906 Q10
+U 1 1 61FADF82
+P 9550 2400
+F 0 "Q10" H 9740 2446 50  0000 L CNN
+F 1 "2N3906" H 9740 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9750 2325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 9550 2400 50  0001 L CNN
+	1    9550 2400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9650 2150 9650 2200
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 61FADF89
+P 4500 2500
+F 0 "J2" V 4562 2544 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 4653 2544 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 4500 2500 50  0001 C CNN
+F 3 "~" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	-1   0    0    1   
+$EndComp
+Connection ~ 4300 2500
+Wire Wire Line
+	4300 2500 4300 3750
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61FADF91
+P 4100 1750
+F 0 "J1" H 4208 1931 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4208 1840 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 4100 1750 50  0001 C CNN
+F 3 "~" H 4100 1750 50  0001 C CNN
+	1    4100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J7
+U 1 1 61FADF97
+P 7650 2500
+F 0 "J7" V 7712 2544 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 7803 2544 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7650 2500 50  0001 C CNN
+F 3 "~" H 7650 2500 50  0001 C CNN
+	1    7650 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 7650 2700
+Wire Wire Line
+	7650 2700 8700 2700
+Wire Wire Line
+	4300 1850 4300 2500
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 61FADFA0
+P 7150 2900
+F 0 "J4" V 7212 2944 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 7303 2944 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7150 2900 50  0001 C CNN
+F 3 "~" H 7150 2900 50  0001 C CNN
+	1    7150 2900
+	-1   0    0    1   
+$EndComp
+Connection ~ 6950 2900
+$Comp
+L Connector:Conn_01x01_Male J9
+U 1 1 61FADFA7
+P 8400 2150
+F 0 "J9" V 8462 2194 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 8553 2194 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 8400 2150 50  0001 C CNN
+F 3 "~" H 8400 2150 50  0001 C CNN
+	1    8400 2150
+	-1   0    0    1   
+$EndComp
+Connection ~ 8200 2150
+Wire Wire Line
+	8200 2150 8200 2100
+$Comp
+L Connector:Conn_01x01_Male J10
+U 1 1 61FADFAF
+P 9850 2200
+F 0 "J10" V 9912 2244 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 10003 2244 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 9850 2200 50  0001 C CNN
+F 3 "~" H 9850 2200 50  0001 C CNN
+	1    9850 2200
+	-1   0    0    1   
+$EndComp
+Connection ~ 9650 2200
+$Comp
+L Connector:Conn_01x01_Male J6
+U 1 1 61FADFB6
+P 7600 3850
+F 0 "J6" V 7662 3894 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 7753 3894 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7600 3850 50  0001 C CNN
+F 3 "~" H 7600 3850 50  0001 C CNN
+	1    7600 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 2900 5650 3050
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 61FADFE0
+P 7600 5000
+F 0 "J5" V 7662 5044 50  0000 L CNN
+F 1 "Conn_01x01_Male" V 7753 5044 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 7600 5000 50  0001 C CNN
+F 3 "~" H 7600 5000 50  0001 C CNN
+	1    7600 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2900 3650 3150
+Connection ~ 3650 3150
+Wire Wire Line
+	3650 3150 3950 3150
+Wire Wire Line
+	3650 2900 3850 2900
+$Comp
+L Device:R_POT Centrar1
+U 1 1 61FAE000
+P 3950 4200
+F 0 "Centrar1" H 3880 4154 50  0000 R CNN
+F 1 "500" H 3880 4245 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 3950 4200 50  0001 C CNN
+F 3 "~" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3700 3950 4050
+Wire Wire Line
+	3950 4350 3950 4800
+$Comp
+L power:+5V #PWR016
+U 1 1 61FAE00F
+P 8900 3900
+F 0 "#PWR016" H 8900 3750 50  0001 C CNN
+F 1 "+5V" H 8915 4073 50  0000 C CNN
+F 2 "" H 8900 3900 50  0001 C CNN
+F 3 "" H 8900 3900 50  0001 C CNN
+	1    8900 3900
+	-1   0    0    1   
+$EndComp
+Text HLabel 3650 2900 0    50   Input ~ 0
+PIN+15
+Text HLabel 4100 4200 3    50   Input ~ 0
+PIN+5
+Text HLabel 2950 5750 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2950 5750 3350 5750
+Connection ~ 3350 5750
+Text HLabel 11000 2700 0    50   Input ~ 0
+OUT_Capacitor
+Wire Wire Line
+	10500 2700 11000 2700
+$Comp
+L power:+15V #PWR05
+U 1 1 61FCEB53
+P 3850 2900
+F 0 "#PWR05" H 3850 2750 50  0001 C CNN
+F 1 "+15V" H 3865 3073 50  0000 C CNN
+F 2 "" H 3850 2900 50  0001 C CNN
+F 3 "" H 3850 2900 50  0001 C CNN
+	1    3850 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 2900
+Wire Wire Line
+	3850 2900 5650 2900
+$Comp
+L power:+5V #PWR04
+U 1 1 61FCF07E
+P 4100 4200
+F 0 "#PWR04" H 4100 4050 50  0001 C CNN
+F 1 "+5V" H 4115 4373 50  0000 C CNN
+F 2 "" H 4100 4200 50  0001 C CNN
+F 3 "" H 4100 4200 50  0001 C CNN
+	1    4100 4200
+	1    0    0    -1  
+$EndComp
+Text HLabel 7400 5000 0    50   Input ~ 0
+V_flipflop
+Wire Wire Line
+	4950 3650 4950 4000
+Wire Wire Line
+	4750 3550 4750 4100
+Wire Wire Line
+	4750 4100 4950 4100
+Wire Wire Line
+	4150 3550 4750 3550
+Wire Wire Line
+	4650 3750 4650 4200
+Wire Wire Line
+	4650 4200 4950 4200
+Wire Wire Line
+	4300 3750 4650 3750
+Wire Wire Line
+	6250 4100 6300 4100
+Wire Wire Line
+	6250 4200 5600 4200
+Wire Wire Line
+	5600 4200 5600 4600
+Wire Wire Line
+	6250 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 4800
+Wire Wire Line
+	6250 3500 5850 3500
+Wire Wire Line
+	4300 4600 5600 4600
+$Comp
+L power:GND #PWR0102
+U 1 1 62076A43
+P 4950 4300
+F 0 "#PWR0102" H 4950 4050 50  0001 C CNN
+F 1 "GND" H 4955 4127 50  0000 C CNN
+F 2 "" H 4950 4300 50  0001 C CNN
+F 3 "" H 4950 4300 50  0001 C CNN
+	1    4950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74HC02PW_112:74HC02PW,112 IC3
+U 1 1 62081D8D
+P 6450 4000
+F 0 "IC3" H 6950 4265 50  0000 C CNN
+F 1 "74HC02PW,112" H 6950 4174 50  0000 C CNN
+F 2 "New folder:SOP65P640X110-14N" H 7300 4100 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf" H 7300 4000 50  0001 L CNN
+F 4 "74HC(T)02 - Quad 2-input NOR gate@en-us" H 7300 3900 50  0001 L CNN "Description"
+F 5 "1.1" H 7300 3800 50  0001 L CNN "Height"
+F 6 "Nexperia" H 7300 3700 50  0001 L CNN "Manufacturer_Name"
+F 7 "74HC02PW,112" H 7300 3600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "771-HC02PW112" H 7300 3500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=771-HC02PW112" H 7300 3400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "74HC02PW,112" H 7300 3300 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/74hc02pw112/nexperia" H 7300 3200 50  0001 L CNN "Arrow Price/Stock"
+	1    6450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3550 7450 4000
+Wire Wire Line
+	6300 4800 7000 4800
+Wire Wire Line
+	7000 4800 7000 4300
+Wire Wire Line
+	7000 4300 7450 4300
+Wire Wire Line
+	6300 4100 6300 4800
+Wire Wire Line
+	6450 4200 7000 4200
+Wire Wire Line
+	7000 4200 7000 4100
+Wire Wire Line
+	7000 4100 7450 4100
+Wire Wire Line
+	7450 4100 7600 4100
+Connection ~ 7450 4100
+Wire Wire Line
+	6450 4000 6350 4000
+Wire Wire Line
+	6350 4000 6350 4750
+Wire Wire Line
+	6350 4750 6850 4750
+Wire Wire Line
+	6850 4750 6850 4250
+Wire Wire Line
+	6850 4250 7150 4250
+Wire Wire Line
+	7150 4250 7150 4200
+Wire Wire Line
+	7150 4200 7450 4200
+Wire Wire Line
+	6800 3650 6800 4100
+Wire Wire Line
+	6800 4100 6450 4100
+Wire Wire Line
+	4950 3650 6800 3650
+$Comp
+L power:GND #PWR0103
+U 1 1 620C0FF1
+P 6450 4600
+F 0 "#PWR0103" H 6450 4350 50  0001 C CNN
+F 1 "GND" H 6455 4427 50  0000 C CNN
+F 2 "" H 6450 4600 50  0001 C CNN
+F 3 "" H 6450 4600 50  0001 C CNN
+	1    6450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4200 7800 4200
+Wire Wire Line
+	7800 4200 7800 4050
+Connection ~ 7450 4200
+Connection ~ 7800 4050
+Wire Wire Line
+	7800 4050 7600 4050
+$Comp
+L Device:R R2
+U 1 1 620F8314
+P 8500 3800
+F 0 "R2" V 8707 3800 50  0000 C CNN
+F 1 "10K" V 8616 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 3800 50  0001 C CNN
+F 3 "~" H 8500 3800 50  0001 C CNN
+	1    8500 3800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9650 3800
+Wire Wire Line
+	9650 3800 9650 3850
+Wire Wire Line
+	9150 3800 8900 3800
+Wire Wire Line
+	8900 3800 8900 3900
+Wire Wire Line
+	8650 3800 8900 3800
+Connection ~ 8900 3800
+Wire Wire Line
+	8350 3800 8200 3800
+Connection ~ 8200 3800
+Wire Wire Line
+	8200 3800 8200 3850
+Wire Wire Line
+	9450 3800 9650 3800
+$Comp
+L Device:R R13
+U 1 1 620F8B8E
+P 9300 3800
+F 0 "R13" V 9507 3800 50  0000 C CNN
+F 1 "10K" V 9416 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9230 3800 50  0001 C CNN
+F 3 "~" H 9300 3800 50  0001 C CNN
+	1    9300 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 3750 4300 4600
+Wire Wire Line
+	7400 5000 7400 4650
+Wire Wire Line
+	7400 4650 7600 4650
+Wire Wire Line
+	7600 4100 7600 4650
+Connection ~ 7600 4650
+Wire Wire Line
+	7600 4650 7600 4700
+$Comp
+L LM393AD:LM393AD IC2
+U 1 1 620547BB
+P 4950 4000
+F 0 "IC2" H 5600 4265 50  0000 C CNN
+F 1 "LM393AD" H 5600 4174 50  0000 C CNN
+F 2 "New folder:SOIC127P600X175-8N" H 6100 4100 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393a.pdf" H 6100 4000 50  0001 L CNN
+F 4 "LM393ADG4, Dual Comparator Open Collector 1.3s 2-kanalers 3, 5, 9, 12, 15, 18, 24, 28V 8-Pin SOIC" H 6100 3900 50  0001 L CNN "Description"
+F 5 "1.75" H 6100 3800 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 6100 3700 50  0001 L CNN "Manufacturer_Name"
+F 7 "LM393AD" H 6100 3600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-LM393AD" H 6100 3500 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM393AD?qs=LfG3tU9ud8Dw2sg2xFhQ4Q%3D%3D" H 6100 3400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "LM393AD" H 6100 3300 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/lm393ad/texas-instruments" H 6100 3200 50  0001 L CNN "Arrow Price/Stock"
+	1    4950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4700 9350 4700
+Wire Wire Line
+	9650 3600 9650 3800
+Wire Wire Line
+	7000 1650 6600 1650
+Wire Wire Line
+	6600 1650 6600 2450
+Wire Wire Line
+	6600 2450 6950 2450
+Connection ~ 6950 2450
+Wire Wire Line
+	3950 4800 5850 4800
+$Comp
+L power:+5V #PWR0107
+U 1 1 62601C7D
+P 7450 3550
+F 0 "#PWR0107" H 7450 3400 50  0001 C CNN
+F 1 "+5V" H 7465 3723 50  0000 C CNN
+F 2 "" H 7450 3550 50  0001 C CNN
+F 3 "" H 7450 3550 50  0001 C CNN
+	1    7450 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6274CF4D
+P 7750 3550
+AR Path="/61FF2F62/6274CF4D" Ref="#PWR?"  Part="1" 
+AR Path="/61F9DFF3/6274CF4D" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 7750 3300 50  0001 C CNN
+F 1 "GND" H 7755 3377 50  0000 C CNN
+F 2 "" H 7750 3550 50  0001 C CNN
+F 3 "" H 7750 3550 50  0001 C CNN
+	1    7750 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C Cacople?
+U 1 1 6274CF53
+P 7600 3550
+AR Path="/61FF2F62/6274CF53" Ref="Cacople?"  Part="1" 
+AR Path="/61F9DFF3/6274CF53" Ref="Cacople4"  Part="1" 
+F 0 "Cacople4" H 7485 3504 50  0000 R CNN
+F 1 "10p" H 7485 3595 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7638 3400 50  0001 C CNN
+F 3 "~" H 7600 3550 50  0001 C CNN
+	1    7600 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 627525A4
+P 5550 3150
+AR Path="/61FF2F62/627525A4" Ref="#PWR?"  Part="1" 
+AR Path="/61F9DFF3/627525A4" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 5550 2900 50  0001 C CNN
+F 1 "GND" H 5555 2977 50  0000 C CNN
+F 2 "" H 5550 3150 50  0001 C CNN
+F 3 "" H 5550 3150 50  0001 C CNN
+	1    5550 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C Cacople?
+U 1 1 627525AA
+P 5700 3150
+AR Path="/61FF2F62/627525AA" Ref="Cacople?"  Part="1" 
+AR Path="/61F9DFF3/627525AA" Ref="Cacople3"  Part="1" 
+F 0 "Cacople3" H 5585 3104 50  0000 R CNN
+F 1 "100n" H 5585 3195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 3000 50  0001 C CNN
+F 3 "~" H 5700 3150 50  0001 C CNN
+	1    5700 3150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5850 3150
+Wire Wire Line
+	6250 3500 6250 4000
+Wire Wire Line
+	5850 3150 5850 3500
+Wire Wire Line
+	6450 3200 6250 3200
+Wire Wire Line
+	6250 3200 6250 3500
+Connection ~ 6250 3500
+Wire Wire Line
+	6300 3500 6450 3500
+Wire Wire Line
+	6300 3500 6300 4100
+Connection ~ 6300 4100
+$Comp
+L Connector:Conn_01x02_Female J8
+U 1 1 6208896B
+P 8000 3600
+F 0 "J8" H 7700 3550 50  0000 C CNN
+F 1 "Pot_paralelo" H 7892 3366 50  0000 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical" H 8000 3600 50  0001 C CNN
+F 3 "~" H 8000 3600 50  0001 C CNN
+	1    8000 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8200 3400 8200 3500
+Wire Wire Line
+	8200 3600 8200 3800
+$Comp
+L Connector:Conn_01x02_Female J12
+U 1 1 6209347C
+P 9850 3600
+F 0 "J12" H 10000 3550 50  0000 C CNN
+F 1 "Pot_paralelo" V 9900 3550 50  0000 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical" H 9850 3600 50  0001 C CNN
+F 3 "~" H 9850 3600 50  0001 C CNN
+	1    9850 3600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9650 3500 9650 3400
+$Comp
+L Transistor_BJT:2N3904 Q11
+U 1 1 61FADED9
+P 9550 3200
+F 0 "Q11" H 9740 3246 50  0000 L CNN
+F 1 "2N3904" H 9740 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9750 3125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9550 3200 50  0001 L CNN
+	1    9550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 6209EB2C
+P 7000 1450
+F 0 "J3" H 6700 1400 50  0000 C CNN
+F 1 "Pot_frec" H 6892 1216 50  0000 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical" H 7000 1450 50  0001 C CNN
+F 3 "~" H 7000 1450 50  0001 C CNN
+	1    7000 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 4400 6450 4500
+Wire Wire Line
+	6450 4600 6450 4500
+Connection ~ 6450 4600
+Connection ~ 6450 4500
+Wire Wire Line
+	7450 4600 7450 4500
+Wire Wire Line
+	6450 4500 7450 4500
+Connection ~ 7450 4500
+$EndSCHEMATC
